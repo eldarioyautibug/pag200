@@ -3806,7 +3806,6 @@ button {
 }
  
  
-/* ---------- GRID DE 4 CARTAS ---------- */
 .rpubs-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -3822,7 +3821,6 @@ button {
 }
  
  
-/* ---------- CARTA TIPO PUBLICACIÓN NUMERADA ---------- */
 .rpub-card {
     position: relative;
     background: var(--color-bg-soft);
@@ -3841,7 +3839,6 @@ button {
     border-bottom: 3px solid transparent;
 }
  
-/* Línea diagonal sutil de fondo (textura "papel técnico") */
 .rpub-card::before {
     content: '';
     position: absolute;
@@ -3858,7 +3855,6 @@ button {
     z-index: -1;
 }
  
-/* Acento gradiente lateral izquierdo (visible solo en hover) */
 .rpub-card::after {
     content: '';
     position: absolute;
@@ -3885,7 +3881,6 @@ button {
 }
  
  
-/* ---------- WATERMARK NUMÉRICO DE FONDO ---------- */
 .rpub-watermark {
     position: absolute;
     top: 0.5rem;
@@ -3908,7 +3903,6 @@ button {
 }
  
  
-/* ---------- FILA SUPERIOR: TAG + META ---------- */
 .rpub-top {
     display: flex;
     align-items: center;
@@ -3940,7 +3934,6 @@ button {
 }
  
  
-/* ---------- ICONO MINIMALISTA (sin caja) ---------- */
 .rpub-icon-wrap {
     width: 38px;
     height: 38px;
@@ -3971,7 +3964,6 @@ button {
 }
  
  
-/* ---------- TÍTULO Y TEXTO ---------- */
 .rpub-title {
     font-family: var(--font-display);
     font-size: 1.2rem;
@@ -3995,7 +3987,6 @@ button {
 }
  
  
-/* ---------- ENLACE TIPO INLINE CON FLECHA ---------- */
 .rpub-link {
     display: inline-flex;
     align-items: center;
@@ -4029,7 +4020,6 @@ button {
 }
  
  
-/* ---------- RESPONSIVE EXTRA PARA MÓVIL ---------- */
 @media (max-width: 640px) {
     .rpub-card {
         padding: 1.5rem 1.25rem 1.25rem;
@@ -4042,4 +4032,113 @@ button {
     .rpub-title {
         font-size: 1.1rem;
     }
+}
+
+.table-scroll-y {
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+/* La tabla necesita ser más ancha porque ahora tiene 10 columnas */
+#variablesTable {
+    min-width: 2350px;
+    table-layout: fixed;
+}
+
+/* Ajuste general */
+#variablesTable th,
+#variablesTable td {
+    vertical-align: top;
+    box-sizing: border-box;
+    overflow: visible;
+    word-break: normal;
+    overflow-wrap: normal;
+}
+
+/* 1. Nombre original */
+#variablesTable th:nth-child(1),
+#variablesTable td:nth-child(1) {
+    width: 190px;
+    white-space: nowrap;
+}
+
+/* 2. Nombre */
+#variablesTable th:nth-child(2),
+#variablesTable td:nth-child(2) {
+    width: 190px;
+    white-space: nowrap;
+}
+
+/* 3. Descripción */
+#variablesTable th:nth-child(3),
+#variablesTable td:nth-child(3) {
+    width: 330px;
+}
+
+/* 4. Tipo */
+#variablesTable th:nth-child(4),
+#variablesTable td:nth-child(4) {
+    width: 150px;
+    white-space: nowrap;
+}
+
+/* 5. Subtipo */
+#variablesTable th:nth-child(5),
+#variablesTable td:nth-child(5) {
+    width: 120px;
+    white-space: nowrap;
+}
+
+/* 6. Dominio */
+#variablesTable th:nth-child(6),
+#variablesTable td:nth-child(6) {
+    width: 350px;
+}
+
+/* 7. Rango */
+#variablesTable th:nth-child(7),
+#variablesTable td:nth-child(7) {
+    width: 460px;
+}
+
+/* 8. Instrumento */
+#variablesTable th:nth-child(8),
+#variablesTable td:nth-child(8) {
+    width: 260px;
+}
+
+/* 9. Unidad */
+#variablesTable th:nth-child(9),
+#variablesTable td:nth-child(9) {
+    width: 180px;
+}
+
+/* 10. Escala */
+#variablesTable th:nth-child(10),
+#variablesTable td:nth-child(10) {
+    width: 140px;
+    white-space: nowrap;
+}
+
+#variablesTable td:nth-child(6) code,
+#variablesTable td:nth-child(7) code {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: break-word;
+
+    line-height: 1.55;
+    font-size: 0.78rem;
+}
+#variablesTable tbody td:nth-child(9),
+#variablesTable tbody td:nth-child(10) {
+    background: #ffffff !important;
+}
+
+#variablesTable tbody tr:hover td:nth-child(9),
+#variablesTable tbody tr:hover td:nth-child(10) {
+    background: #f8fafc !important;
 }
