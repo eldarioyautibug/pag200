@@ -108,9 +108,6 @@
             </div>
         </div>
 
-        <a href="#descriptiva" class="scroll-indicator" aria-label="Desplazar hacia abajo">
-            <span></span>
-        </a>
     </section>
 
     <section class="section section-marco" id="marco">
@@ -121,9 +118,7 @@
  
         <article class="marco-card marco-card-main reveal">
             <span class="marco-kicker">
-                <span class="marco-kicker-num">01</span>
-                <span class="marco-kicker-line"></span>
-                <span class="marco-kicker-text">Contexto</span>
+                
             </span>
  
             <h3 class="marco-title">Planteamiento del problema</h3>
@@ -151,9 +146,7 @@
  
             <article class="marco-card">
                 <span class="marco-kicker">
-                    <span class="marco-kicker-num">02</span>
-                    <span class="marco-kicker-line"></span>
-                    <span class="marco-kicker-text">Dirección</span>
+                    
                 </span>
  
                 <h3 class="marco-title">Objetivo general</h3>
@@ -167,18 +160,12 @@
                     aprendizaje automático.
                 </p>
  
-                <div class="marco-highlight">
-                    <i data-lucide="target"></i>
-                    <span>Identificar patrones globales y temporales del dataset GOGET.</span>
-                </div>
             </article>
  
  
             <article class="marco-card marco-card-list">
                 <span class="marco-kicker">
-                    <span class="marco-kicker-num">03</span>
-                    <span class="marco-kicker-line"></span>
-                    <span class="marco-kicker-text">Desarrollo</span>
+                    
                 </span>
  
                 <h3 class="marco-title">Objetivos específicos</h3>
@@ -463,378 +450,454 @@
 
 </div>
 
-            <div class="table-wrapper reveal">
-                <h3 class="table-title">
-                    <i data-lucide="table-2"></i>
-                    Tabla de variables del dataset
-                </h3>
-                <div class="table-scroll">
-                    <table class="data-table data-table-hover" id="variablesTable">
-                        <thead>
-                            <tr>
-                                <th>Nombre original</th>
-                                <th>Nombre</th>
-                                <th>Descripción</th>
-                                <th>Tipo</th>
-                                <th>Subtipo</th>
-                                <th>Instrumento</th>
-                                <th>Unidad</th>
-                                <th>Escala</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Unit ID</td>
-                                <td>id_unidad</td>
-                                <td>Código alfanumérico que distingue de forma inequívoca cada registro en la base de datos.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td>Sistema de gestión de datos</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Unit Name</td>
-                                <td>nombre_unidad</td>
-                                <td>Denominación con la que el proyecto es reconocido oficialmente en la fuente primaria.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td>Documentación del proyecto</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Unit name local script</td>
-                                <td>nombre_local</td>
-                                <td>Denominación del proyecto según el alfabeto o sistema de escritura del país de origen.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td>Documentación del proyecto</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Fuel type</td>
-                                <td>tipo_combustible</td>
-                                <td>Insumo energético primario explotado: petróleo, gas, carbón, nuclear, biocombustible u otro.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td>Clasificación energética</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Unit type</td>
-                                <td>tipo_unidad</td>
-                                <td>Categoría funcional de la instalación en la cadena productiva: pozo, mina, planta, terminal, etc.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td>Clasificación técnica del proyecto</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Country</td>
-                                <td>pais</td>
-                                <td>Territorio soberano en cuya jurisdicción se encuentra físicamente la instalación.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td>Registro oficial / SIG</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Subnational unit</td>
-                                <td>unidad_sub</td>
-                                <td>Entidad político-administrativa de nivel inferior al país: provincia, estado, departamento o región.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td>Registro oficial / SIG</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Latitude</td>
-                                <td>latitud</td>
-                                <td>Componente norte-sur de la posición geográfica, expresada en grados decimales.</td>
-                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
-                                <td>Continua</td>
-                                <td>Sistema de posicionamiento</td>
-                                <td>Grados decimales</td>
-                                <td>Intervalo</td>
-                            </tr>
-                            <tr>
-                                <td>Longitude</td>
-                                <td>longitud</td>
-                                <td>Componente este-oeste de la posición geográfica, expresada en grados decimales.</td>
-                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
-                                <td>Continua</td>
-                                <td>Sistema de posicionamiento</td>
-                                <td>Grados decimales</td>
-                                <td>Intervalo</td>
-                            </tr>
-                            <tr>
-                                <td>Location accuracy</td>
-                                <td>precision_ubi</td>
-                                <td>Grado de confianza en la exactitud de las coordenadas registradas para la instalación.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Ordinal</td>
-                                <td>Evaluación técnica del dato</td>
-                                <td>Ninguna</td>
-                                <td>Ordinal</td>
-                            </tr>
-                            <tr>
-                                <td>Status</td>
-                                <td>estado</td>
-                                <td>Fase del ciclo de vida en la que se encuentra la instalación: en operación, en construcción, propuesta, etc.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Ordinal</td>
-                                <td>Informe del operador / registro</td>
-                                <td>Ninguna</td>
-                                <td>Ordinal</td>
-                            </tr>
-                            <tr>
-                                <td>Status year</td>
-                                <td>año_estado</td>
-                                <td>Momento en que se verificó o actualizó por última vez la condición operacional registrada.</td>
-                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
-                                <td>Discreta</td>
-                                <td>Registro histórico / base de datos</td>
-                                <td>Año (AAAA)</td>
-                                <td>Intervalo</td>
-                            </tr>
-                            <tr>
-                                <td>Discovery year</td>
-                                <td>año_descubrimiento</td>
-                                <td>Momento en que fue confirmada la existencia comercial del yacimiento o recurso.</td>
-                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
-                                <td>Discreta</td>
-                                <td>Registro histórico / exploración</td>
-                                <td>Año (AAAA)</td>
-                                <td>Intervalo</td>
-                            </tr>
-                            <tr>
-                                <td>FID</td>
-                                <td>fid</td>
-                                <td>Momento en que los inversores aprobaron formalmente el financiamiento para el desarrollo del proyecto.</td>
-                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
-                                <td>Discreta</td>
-                                <td>Registro financiero del proyecto</td>
-                                <td>Año (AAAA)</td>
-                                <td>Intervalo</td>
-                            </tr>
-                            <tr>
-                                <td>Year</td>
-                                <td>año</td>
-                                <td>Periodo de referencia temporal general al que corresponde el registro en la base de datos.</td>
-                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
-                                <td>Discreta</td>
-                                <td>Registro temporal de la base de datos</td>
-                                <td>Año (AAAA)</td>
-                                <td>Intervalo</td>
-                            </tr>
-                            <tr>
-                                <td>Production start year</td>
-                                <td>año_inicio_prod</td>
-                                <td>Momento en que la instalación comenzó a extraer o procesar el recurso de forma comercial.</td>
-                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
-                                <td>Discreta</td>
-                                <td>Registro operacional del proyecto</td>
-                                <td>Año (AAAA)</td>
-                                <td>Intervalo</td>
-                            </tr>
-                            <tr>
-                                <td>Operator</td>
-                                <td>operador</td>
-                                <td>Entidad técnica encargada de gestionar las operaciones diarias de la instalación.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td>Documentación corporativa / operacional</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Owner</td>
-                                <td>propietario</td>
-                                <td>Persona jurídica o física con titularidad legal sobre el activo o el recurso.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td>Documentación legal / corporativa</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Parent</td>
-                                <td>matriz</td>
-                                <td>Corporación de nivel superior bajo cuya estructura societaria opera el dueño o el gestor de la instalación.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td>Documentación corporativa</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Basin</td>
-                                <td>cuenca</td>
-                                <td>Depresión geológica de acumulación sedimentaria donde se aloja el recurso explotado.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td>Cartografía geológica / SIG</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Concession / block</td>
-                                <td>bloque_concesion</td>
-                                <td>Área geográfica delimitada por el ente regulador sobre la que se otorgan derechos de exploración o explotación.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td>Registro gubernamental / ente regulador</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Project or complex</td>
-                                <td>proyecto_complejo</td>
-                                <td>Agrupación de instalaciones o fases bajo una misma iniciativa de desarrollo energético.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td>Documentación del proyecto</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Government unit</td>
-                                <td>unidad_gub</td>
-                                <td>Dependencia estatal con facultades de regulación, concesión o participación accionaria sobre el activo.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td>Registro oficial del Estado</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Wiki</td>
-                                <td>wiki</td>
-                                <td>Código de referencia cruzada que vincula el registro con otros sistemas o bases de datos.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td>Sistema de gestión de datos</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Wiki</td>
-                                <td>wiki</td>
-                                <td>Recurso de consulta enciclopédica abierta asociado a la instalación o proyecto.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td>Fuente web externa (Wikipedia)</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>URL</td>
-                                <td>url</td>
-                                <td>Dirección web que apunta a la fuente primaria o secundaria de donde proviene la información del registro.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td>Fuente web externa</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Unit name2</td>
-                                <td>nombre_unidad_2</td>
-                                <td>Denominación alternativa o histórica con la que también se conoce la instalación.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td>Documentación del proyecto</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Production/reserves</td>
-                                <td>reservas_prod</td>
-                                <td>Indica si el valor cuantitativo corresponde a extracción efectiva o a estimación de recursos.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td>Clasificación técnica del dato</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Fuel description</td>
-                                <td>desc_combustible</td>
-                                <td>Especificación pormenorizada del recurso: grado, fracción, mezcla o subtipo dentro de la categoría energética.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td>Clasificación técnica del proyecto</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Reserves classification</td>
-                                <td>origen_clasif_res</td>
-                                <td>Categoría de certidumbre del volumen según el estándar de la fuente: probadas, probables, posibles o contingentes.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Ordinal</td>
-                                <td>Informe técnico / normativa SPE</td>
-                                <td>Ninguna</td>
-                                <td>Ordinal</td>
-                            </tr>
-                            <tr>
-                                <td>Quantity (original)</td>
-                                <td>cant_original</td>
-                                <td>Volumen o masa consignado en la fuente primaria, sin ninguna transformación de unidades.</td>
-                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
-                                <td>Continua</td>
-                                <td>Medición técnica / informe de reservas</td>
-                                <td>Variable / ver Units</td>
-                                <td>Razón</td>
-                            </tr>
-                            <tr>
-                                <td>Units (original)</td>
-                                <td>unid_original</td>
-                                <td>Sistema de medida en el que el volumen fue reportado: Bcf, MMbbl, Mt, Tcf, PJ, etc.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td>Clasificación metrológica técnica</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Data year</td>
-                                <td>año_datos</td>
-                                <td>Ejercicio o periodo al que corresponde el valor de producción o reservas consignado.</td>
-                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
-                                <td>Discreta</td>
-                                <td>Registro temporal del informe</td>
-                                <td>Año (AAAA)</td>
-                                <td>Intervalo</td>
-                            </tr>
-                            <tr>
-                                <td>Quantity (converted)</td>
-                                <td>cant_convertida</td>
-                                <td>Volumen o masa reexpresado en la unidad estándar del estudio para facilitar la comparación.</td>
-                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
-                                <td>Continua</td>
-                                <td>Conversión técnica estandarizada</td>
-                                <td>Variable / ver Units</td>
-                                <td>Razón</td>
-                            </tr>
-                            <tr>
-                                <td>Units (converted)</td>
-                                <td>unid_convertidas</td>
-                                <td>Sistema de medida normalizado al que fueron homogeneizadas todas las cantidades para el análisis.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td>Clasificación metrológica</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                        </tbody>
-                    </table>
+<div class="table-wrapper table-wrapper-scroll reveal">
+    <h3 class="table-title">
+        <i data-lucide="table-2"></i>
+        Tabla de variables del dataset
+        <span class="table-count">36 variables</span>
+    </h3>
+ 
+    <div class="table-scroll table-scroll-y">
+        <table class="data-table data-table-hover" id="variablesTable">
+            <thead>
+                <tr>
+                    <th>Nombre original</th>
+                    <th>Nombre</th>
+                    <th>Descripción</th>
+                    <th>Tipo</th>
+                    <th>Subtipo</th>
+                    <th>Instrumento</th>
+                    <th>Unidad</th>
+                    <th>Escala</th>
+                    <th>Dominio</th>
+                    <th>Rango</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Unit ID</td>
+                    <td>id_unidad</td>
+                    <td>Código alfanumérico que distingue de forma inequívoca cada registro en la base de datos.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Nominal</td>
+                    <td>Sistema de gestión de datos</td>
+                    <td>Ninguna</td>
+                    <td>Nominal</td>
+                    <td><code>D = { x | x es cadena alfanumérica }</code></td>
+                    <td><code>R = { x | x identifica de forma única una unidad ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Unit Name</td>
+                    <td>nombre_unidad</td>
+                    <td>Denominación con la que el proyecto es reconocido oficialmente en la fuente primaria.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Nominal</td>
+                    <td>Documentación del proyecto</td>
+                    <td>Ninguna</td>
+                    <td>Nominal</td>
+                    <td><code>D = { x | x es cadena de texto }</code></td>
+                    <td><code>R = { x | x es nombre de unidad energética ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Unit name local script</td>
+                    <td>nombre_local</td>
+                    <td>Denominación del proyecto según el alfabeto o sistema de escritura del país de origen.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Nominal</td>
+                    <td>Documentación del proyecto</td>
+                    <td>Ninguna</td>
+                    <td>Nominal</td>
+                    <td><code>D = { x | x es cadena de texto en escritura local }</code></td>
+                    <td><code>R = { x | x es nombre local de unidad energética ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Fuel type</td>
+                    <td>tipo_combustible</td>
+                    <td>Insumo energético primario explotado: petróleo, gas, carbón, nuclear, biocombustible u otro.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Nominal</td>
+                    <td>Clasificación energética</td>
+                    <td>Ninguna</td>
+                    <td>Nominal</td>
+                    <td><code>D = { x | x ∈ { Oil, Gas, Coal, Nuclear, Biofuel, Other } }</code></td>
+                    <td><code>R = { x | x es tipo de combustible ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Unit type</td>
+                    <td>tipo_unidad</td>
+                    <td>Categoría funcional de la instalación en la cadena productiva: pozo, mina, planta, terminal, etc.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Nominal</td>
+                    <td>Clasificación técnica del proyecto</td>
+                    <td>Ninguna</td>
+                    <td>Nominal</td>
+                    <td><code>D = { x | x ∈ { Well, Mine, Field, Plant, Pipeline, Terminal } }</code></td>
+                    <td><code>R = { x | x es tipo de unidad ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td>pais</td>
+                    <td>Territorio soberano en cuya jurisdicción se encuentra físicamente la instalación.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Nominal</td>
+                    <td>Registro oficial / SIG</td>
+                    <td>Ninguna</td>
+                    <td>Nominal</td>
+                    <td><code>D = { x | x es país reconocido internacionalmente }</code></td>
+                    <td><code>R = { x | x es país con unidades registradas ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Subnational unit</td>
+                    <td>unidad_sub</td>
+                    <td>Entidad político-administrativa de nivel inferior al país: provincia, estado, departamento o región.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Nominal</td>
+                    <td>Registro oficial / SIG</td>
+                    <td>Ninguna</td>
+                    <td>Nominal</td>
+                    <td><code>D = { x | x es división subnacional de un país }</code></td>
+                    <td><code>R = { x | x es división subnacional con unidades registradas ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Latitude</td>
+                    <td>latitud</td>
+                    <td>Componente norte-sur de la posición geográfica, expresada en grados decimales.</td>
+                    <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                    <td>Continua</td>
+                    <td>Sistema de posicionamiento</td>
+                    <td>Grados decimales</td>
+                    <td>Intervalo</td>
+                    <td><code>D = { x ∈ ℝ | −90 ≤ x ≤ 90 }</code></td>
+                    <td><code>R = { x | x es latitud de unidades registradas ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Longitude</td>
+                    <td>longitud</td>
+                    <td>Componente este-oeste de la posición geográfica, expresada en grados decimales.</td>
+                    <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                    <td>Continua</td>
+                    <td>Sistema de posicionamiento</td>
+                    <td>Grados decimales</td>
+                    <td>Intervalo</td>
+                    <td><code>D = { x ∈ ℝ | −180 ≤ x ≤ 180 }</code></td>
+                    <td><code>R = { x | x es longitud de unidades registradas ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Location accuracy</td>
+                    <td>precision_ubi</td>
+                    <td>Grado de confianza en la exactitud de las coordenadas registradas para la instalación.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Ordinal</td>
+                    <td>Evaluación técnica del dato</td>
+                    <td>Ninguna</td>
+                    <td>Ordinal</td>
+                    <td><code>D = { x | x ∈ { Exact, Approximate, Country-level, Unknown } }</code></td>
+                    <td><code>R = { x | x es nivel de precisión registrado ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td>estado</td>
+                    <td>Fase del ciclo de vida en la que se encuentra la instalación: en operación, en construcción, propuesta, etc.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Ordinal</td>
+                    <td>Informe del operador / registro</td>
+                    <td>Ninguna</td>
+                    <td>Ordinal</td>
+                    <td><code>D = { x | x ∈ { Operating, Under Construction, Proposed, Shelved } }</code></td>
+                    <td><code>R = { x | x es estado registrado ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Status year</td>
+                    <td>año_estado</td>
+                    <td>Momento en que se verificó o actualizó por última vez la condición operacional registrada.</td>
+                    <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                    <td>Discreta</td>
+                    <td>Registro histórico / base de datos</td>
+                    <td>Año (AAAA)</td>
+                    <td>Intervalo</td>
+                    <td><code>D = { x ∈ ℤ | x &gt; 0 }</code></td>
+                    <td><code>R = { x ∈ ℤ | x es año de actualización de estado ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Discovery year</td>
+                    <td>año_descubrimiento</td>
+                    <td>Momento en que fue confirmada la existencia comercial del yacimiento o recurso.</td>
+                    <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                    <td>Discreta</td>
+                    <td>Registro histórico / exploración</td>
+                    <td>Año (AAAA)</td>
+                    <td>Intervalo</td>
+                    <td><code>D = { x ∈ ℤ | x &gt; 0 }</code></td>
+                    <td><code>R = { x ∈ ℤ | x es año de descubrimiento ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>FID</td>
+                    <td>fid</td>
+                    <td>Momento en que los inversores aprobaron formalmente el financiamiento para el desarrollo del proyecto.</td>
+                    <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                    <td>Discreta</td>
+                    <td>Registro financiero del proyecto</td>
+                    <td>Año (AAAA)</td>
+                    <td>Intervalo</td>
+                    <td><code>D = { x ∈ ℤ | x &gt; 0 }</code></td>
+                    <td><code>R = { x ∈ ℤ | x es año de decisión de inversión ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Year</td>
+                    <td>año</td>
+                    <td>Periodo de referencia temporal general al que corresponde el registro en la base de datos.</td>
+                    <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                    <td>Discreta</td>
+                    <td>Registro temporal de la base de datos</td>
+                    <td>Año (AAAA)</td>
+                    <td>Intervalo</td>
+                    <td><code>D = { x ∈ ℤ | x &gt; 0 }</code></td>
+                    <td><code>R = { x ∈ ℤ | x es año de referencia del registro ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Production start year</td>
+                    <td>año_inicio_prod</td>
+                    <td>Momento en que la instalación comenzó a extraer o procesar el recurso de forma comercial.</td>
+                    <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                    <td>Discreta</td>
+                    <td>Registro operacional del proyecto</td>
+                    <td>Año (AAAA)</td>
+                    <td>Intervalo</td>
+                    <td><code>D = { x ∈ ℤ | x &gt; 0 }</code></td>
+                    <td><code>R = { x ∈ ℤ | x es año de inicio de producción ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Operator</td>
+                    <td>operador</td>
+                    <td>Entidad técnica encargada de gestionar las operaciones diarias de la instalación.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Nominal</td>
+                    <td>Documentación corporativa / operacional</td>
+                    <td>Ninguna</td>
+                    <td>Nominal</td>
+                    <td><code>D = { x | x es nombre de empresa operadora }</code></td>
+                    <td><code>R = { x | x es operadora registrada ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Owner</td>
+                    <td>propietario</td>
+                    <td>Persona jurídica o física con titularidad legal sobre el activo o el recurso.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Nominal</td>
+                    <td>Documentación legal / corporativa</td>
+                    <td>Ninguna</td>
+                    <td>Nominal</td>
+                    <td><code>D = { x | x es nombre de propietario o accionista }</code></td>
+                    <td><code>R = { x | x es propietario registrado ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Parent</td>
+                    <td>matriz</td>
+                    <td>Corporación de nivel superior bajo cuya estructura societaria opera el dueño o el gestor de la instalación.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Nominal</td>
+                    <td>Documentación corporativa</td>
+                    <td>Ninguna</td>
+                    <td>Nominal</td>
+                    <td><code>D = { x | x es nombre de empresa matriz }</code></td>
+                    <td><code>R = { x | x es empresa matriz registrada ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Basin</td>
+                    <td>cuenca</td>
+                    <td>Depresión geológica de acumulación sedimentaria donde se aloja el recurso explotado.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Nominal</td>
+                    <td>Cartografía geológica / SIG</td>
+                    <td>Ninguna</td>
+                    <td>Nominal</td>
+                    <td><code>D = { x | x es nombre de cuenca geológica }</code></td>
+                    <td><code>R = { x | x es cuenca registrada ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Concession / block</td>
+                    <td>bloque_concesion</td>
+                    <td>Área geográfica delimitada por el ente regulador sobre la que se otorgan derechos de exploración o explotación.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Nominal</td>
+                    <td>Registro gubernamental / ente regulador</td>
+                    <td>Ninguna</td>
+                    <td>Nominal</td>
+                    <td><code>D = { x | x es código o nombre de bloque concesionado }</code></td>
+                    <td><code>R = { x | x es concesión o bloque registrado ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Project or complex</td>
+                    <td>proyecto_complejo</td>
+                    <td>Agrupación de instalaciones o fases bajo una misma iniciativa de desarrollo energético.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Nominal</td>
+                    <td>Documentación del proyecto</td>
+                    <td>Ninguna</td>
+                    <td>Nominal</td>
+                    <td><code>D = { x | x es nombre de proyecto o complejo energético }</code></td>
+                    <td><code>R = { x | x es proyecto o complejo registrado ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Government unit</td>
+                    <td>unidad_gub</td>
+                    <td>Dependencia estatal con facultades de regulación, concesión o participación accionaria sobre el activo.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Nominal</td>
+                    <td>Registro oficial del Estado</td>
+                    <td>Ninguna</td>
+                    <td>Nominal</td>
+                    <td><code>D = { x | x es nombre de entidad pública o gubernamental }</code></td>
+                    <td><code>R = { x | x es entidad gubernamental registrada ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>ID</td>
+                    <td>id</td>
+                    <td>Código de referencia cruzada que vincula el registro con otros sistemas o bases de datos.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Nominal</td>
+                    <td>Sistema de gestión de datos</td>
+                    <td>Ninguna</td>
+                    <td>Nominal</td>
+                    <td><code>D = { x | x es cadena alfanumérica }</code></td>
+                    <td><code>R = { x | x es identificador alternativo ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Wiki</td>
+                    <td>wiki</td>
+                    <td>Recurso de consulta enciclopédica abierta asociado a la instalación o proyecto.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Nominal</td>
+                    <td>Fuente web externa (Wikipedia)</td>
+                    <td>Ninguna</td>
+                    <td>Nominal</td>
+                    <td><code>D = { x | x es URL válida de Wikipedia }</code></td>
+                    <td><code>R = { x | x es enlace Wikipedia registrado ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>URL</td>
+                    <td>url</td>
+                    <td>Dirección web que apunta a la fuente primaria o secundaria de donde proviene la información del registro.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Nominal</td>
+                    <td>Fuente web externa</td>
+                    <td>Ninguna</td>
+                    <td>Nominal</td>
+                    <td><code>D = { x | x es URL válida }</code></td>
+                    <td><code>R = { x | x es enlace de referencia registrado ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Unit name2</td>
+                    <td>nombre_unidad_2</td>
+                    <td>Denominación alternativa o histórica con la que también se conoce la instalación.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Nominal</td>
+                    <td>Documentación del proyecto</td>
+                    <td>Ninguna</td>
+                    <td>Nominal</td>
+                    <td><code>D = { x | x es cadena de texto }</code></td>
+                    <td><code>R = { x | x es nombre alternativo de unidad ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Production/reserves</td>
+                    <td>reservas_prod</td>
+                    <td>Indica si el valor cuantitativo corresponde a extracción efectiva o a estimación de recursos.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Nominal</td>
+                    <td>Clasificación técnica del dato</td>
+                    <td>Ninguna</td>
+                    <td>Nominal</td>
+                    <td><code>D = { x | x ∈ { Production, Reserves } }</code></td>
+                    <td><code>R = { x | x ∈ { Production, Reserves } }</code></td>
+                </tr>
+                <tr>
+                    <td>Fuel description</td>
+                    <td>desc_combustible</td>
+                    <td>Especificación pormenorizada del recurso: grado, fracción, mezcla o subtipo dentro de la categoría energética.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Nominal</td>
+                    <td>Clasificación técnica del proyecto</td>
+                    <td>Ninguna</td>
+                    <td>Nominal</td>
+                    <td><code>D = { x | x es descripción textual de combustible }</code></td>
+                    <td><code>R = { x | x es descripción registrada ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Reserves classification</td>
+                    <td>origen_clasif_res</td>
+                    <td>Categoría de certidumbre del volumen según el estándar de la fuente: probadas, probables, posibles o contingentes.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Ordinal</td>
+                    <td>Informe técnico / normativa SPE</td>
+                    <td>Ninguna</td>
+                    <td>Ordinal</td>
+                    <td><code>D = { x | x ∈ { Proved, Probable, Possible, Contingent } }</code></td>
+                    <td><code>R = { x | x es categoría de reservas registrada ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Quantity (original)</td>
+                    <td>cant_original</td>
+                    <td>Volumen o masa consignado en la fuente primaria, sin ninguna transformación de unidades.</td>
+                    <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                    <td>Continua</td>
+                    <td>Medición técnica / informe de reservas</td>
+                    <td>Variable / ver Units</td>
+                    <td>Razón</td>
+                    <td><code>D = { x ∈ ℝ | x ≥ 0 }</code></td>
+                    <td><code>R = { x ∈ ℝ | x es cantidad registrada ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Units (original)</td>
+                    <td>unid_original</td>
+                    <td>Sistema de medida en el que el volumen fue reportado: Bcf, MMbbl, Mt, Tcf, PJ, etc.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Nominal</td>
+                    <td>Clasificación metrológica técnica</td>
+                    <td>Ninguna</td>
+                    <td>Nominal</td>
+                    <td><code>D = { x | x ∈ { Bcf, MMbbl, Mt, Tcf, PJ } }</code></td>
+                    <td><code>R = { x | x es unidad registrada ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Data year</td>
+                    <td>año_datos</td>
+                    <td>Ejercicio o periodo al que corresponde el valor de producción o reservas consignado.</td>
+                    <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                    <td>Discreta</td>
+                    <td>Registro temporal del informe</td>
+                    <td>Año (AAAA)</td>
+                    <td>Intervalo</td>
+                    <td><code>D = { x ∈ ℤ | x &gt; 0 }</code></td>
+                    <td><code>R = { x ∈ ℤ | x es año de referencia de datos ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Quantity (converted)</td>
+                    <td>cant_convertida</td>
+                    <td>Volumen o masa reexpresado en la unidad estándar del estudio para facilitar la comparación.</td>
+                    <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                    <td>Continua</td>
+                    <td>Conversión técnica estandarizada</td>
+                    <td>Variable / ver Units</td>
+                    <td>Razón</td>
+                    <td><code>D = { x ∈ ℝ | x ≥ 0 }</code></td>
+                    <td><code>R = { x ∈ ℝ | x es cantidad registrada ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+                <tr>
+                    <td>Units (converted)</td>
+                    <td>unid_convertidas</td>
+                    <td>Sistema de medida normalizado al que fueron homogeneizadas todas las cantidades para el análisis.</td>
+                    <td><span class="badge cualitativa">Cualitativa</span></td>
+                    <td>Nominal</td>
+                    <td>Clasificación metrológica</td>
+                    <td>Ninguna</td>
+                    <td>Nominal</td>
+                    <td><code>D = { x | x ∈ { EJ, Mtoe, PJ, Bcf equivalente } }</code></td>
+                    <td><code>R = { x | x es unidad estándar registrada ∧ x ∈ hoja_de_datos }</code></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
                 </div>
             </div>
             <div class="rpubs-section reveal">
