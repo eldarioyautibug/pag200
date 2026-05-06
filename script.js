@@ -487,3 +487,7 @@
             });
         }
     })();
+    function cerrarAviso() {
+    const overlay = document.getElementById("aviso-overlay");
+    overlay.style.display = "none";
+}
