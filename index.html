@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,16 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 
     <link rel="stylesheet" href="estlos.css">
 </head>
+
 <body>
 
 
@@ -28,7 +32,7 @@
                 Este sitio tiene un propósito <strong>estrictamente académico</strong>
                 y se encuentra en proceso de construcción. La información, cifras y
                 análisis aquí presentados se utilizan <em>únicamente con fines de
-                aprendizaje</em> y no representan orientación ni asesoría profesional.
+                    aprendizaje</em> y no representan orientación ni asesoría profesional.
             </p>
             <div class="aviso-divider"></div>
             <button id="aviso-btn" type="button" onclick="cerrarAviso()">
@@ -56,7 +60,7 @@
                 <a href="#mapa" class="nav-link">Mapa Web</a>
                 <a href="#descriptiva" class="nav-link">Descriptiva</a>
                 <a href="#inferencial" class="nav-link">Inferencial</a>
-                <a href="#regresion" class="nav-link">Regresión</a>
+                <a href="#regresion" class="nav-link">Modelos de Regresión</a>
                 <a href="#machine-learning" class="nav-link">Machine Learning</a>
 
 
@@ -86,7 +90,7 @@
     </header>
 
 
-    <section class="hero" id="inicio">
+    <section class="hero page-section active-page" id="inicio">
         <div class="hero-grid"></div>
         <div class="hero-glow"></div>
 
@@ -102,10 +106,7 @@
                     <span class="title-accent">extracción de petróleo y gas</span>
                 </h1>
 
-                <p class="hero-subtitle">
-                    Visualización geoespacial, análisis estadístico y aprendizaje
-                    automático aplicados al monitoreo global de los recursos energéticos.
-                </p>
+
 
                 <div class="hero-buttons">
                     <a href="#descriptiva" class="btn btn-primary">
@@ -144,8 +145,54 @@
         </div>
     </section>
 
+    <section class="section section-about page-section active-page" id="about-project">
+        <div class="container">
+            <div class="about-grid reveal">
+                <article class="about-card">
+                    <div class="about-icon"><i data-lucide="target"></i></div>
+                    <h3>Misión</h3>
+                    <p>
+                        Proveer información precisa y análisis estadístico riguroso sobre la extracción de petróleo y
+                        gas a nivel global, facilitando la comprensión y toma de decisiones en el sector energético con
+                        un enfoque académico y de investigación.
+                    </p>
+                </article>
+                <article class="about-card">
+                    <div class="about-icon"><i data-lucide="eye"></i></div>
+                    <h3>Visión</h3>
+                    <p>
+                        Ser la plataforma de referencia académica para el análisis, visualización y estudio estadístico
+                        de los recursos energéticos mundiales, integrando tecnologías de machine learning y sistemas de
+                        información geográfica.
+                    </p>
+                </article>
+            </div>
 
-    <section class="section section-marco" id="introduccion">
+            <div class="motivation-wrapper reveal">
+                <div class="motivation-content">
+                    <span class="section-number">00.1</span>
+                    <h2 class="section-title">Motivación del <em>proyecto</em></h2>
+                    <p class="motivation-text">
+                        Este proyecto nace de la necesidad de comprender profundamente la dinámica global de extracción
+                        de hidrocarburos. A través de la aplicación de herramientas estadísticas, espaciales y de
+                        aprendizaje automático, buscamos transformar datos complejos en conocimiento accesible.
+                    </p>
+                    <p class="motivation-text">
+                        Nuestro compromiso es fomentar el análisis crítico y proveer un recurso de alto valor para
+                        estudiantes, investigadores y profesionales del sector, promoviendo una visión integral del
+                        panorama energético actual.
+                    </p>
+                </div>
+                <div class="motivation-image">
+                    <img src="img/universidad.png" alt="Universidad" class="uni-image" loading="lazy">
+                    <div class="motivation-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section section-marco page-section" id="introduccion">
         <div class="container">
 
             <div class="section-header reveal">
@@ -184,8 +231,7 @@
                 </p>
 
                 <a href="https://docs.google.com/spreadsheets/d/1tVpz5Zs5HKDdKjCo4nE_qLPBKQ_pbsm7/edit?usp=sharing"
-                   target="_blank" rel="noopener"
-                   class="marco-cta">
+                    target="_blank" rel="noopener" class="marco-cta">
                     <i data-lucide="file-spreadsheet"></i>
                     Ver dataset unificado
                 </a>
@@ -199,13 +245,6 @@
             </div>
 
             <div class="map-preview reveal">
-                <div class="map-preview-image">
-                    <img src="img/mapa-preview.jpg"
-                         alt="Vista previa del mapa de yacimientos"
-                         loading="lazy">
-                    <div class="map-preview-shine"></div>
-                </div>
-
                 <div class="map-preview-content">
                     <span class="map-preview-tag">
                         <i data-lucide="image"></i>
@@ -225,14 +264,29 @@
                     </ul>
 
                     <div class="map-actions">
-                        <a href="docs/mapa-pozos.pdf" download class="map-download-btn">
+                        <a href="https://drive.google.com/file/d/1Xr4MvIzChpNG9Yd72tOMdxw_10qbxqmZ/view?usp=sharing"
+                            download class="map-download-btn">
                             <i data-lucide="download"></i>
                             Descargar mapa PDF
                         </a>
-                        <a href="#mapa" class="map-explore-btn">
+                        <a href="https://drive.google.com/file/d/1Ma47hUR4yZ17Rd1iAh_TERXWnt8ClN4v/view?usp=sharing"
+                            class="map-explore-btn">
                             Explorar interactivo
                             <i data-lucide="arrow-down"></i>
                         </a>
+                    </div>
+                </div>
+
+                <div class="map-preview-image">
+                    <img src="img/WhatsApp Image 2026-05-05 at 11.58.03 PM.jpeg"
+                        alt="Vista previa del mapa de yacimientos" id="mapPreviewImg" loading="lazy">
+                    <div class="map-preview-shine"></div>
+                    <div class="map-zoom-controls">
+                        <i data-lucide="zoom-out"
+                            onclick="document.getElementById('mapZoomSlider').stepDown(); document.getElementById('mapZoomSlider').dispatchEvent(new Event('input'))"></i>
+                        <input type="range" id="mapZoomSlider" min="1" max="3" step="0.1" value="1">
+                        <i data-lucide="zoom-in"
+                            onclick="document.getElementById('mapZoomSlider').stepUp(); document.getElementById('mapZoomSlider').dispatchEvent(new Event('input'))"></i>
                     </div>
                 </div>
             </div>
@@ -243,7 +297,7 @@
                     <h3 class="marco-title">Objetivo general</h3>
                     <p class="marco-text">
                         Analizar la información del <strong>Global Oil and Gas Extraction
-                        Tracker</strong> sobre los yacimientos de petróleo y gas a
+                            Tracker</strong> sobre los yacimientos de petróleo y gas a
                         nivel mundial, con el fin de identificar su distribución
                         geográfica, evolución temporal y características principales
                         mediante herramientas estadísticas, de visualización espacial
@@ -299,7 +353,7 @@
     </section>
 
 
-    <section class="section section-alt" id="mapa">
+    <section class="section section-alt page-section" id="mapa">
         <div class="container">
 
             <div class="section-header reveal">
@@ -327,7 +381,8 @@
                         <button class="map-icon-btn" type="button" id="mapFullscreenBtn" aria-label="Pantalla completa">
                             <i data-lucide="maximize-2"></i>
                         </button>
-                        <a class="map-icon-btn" href="mapa_web/index.html" target="_blank" rel="noopener" aria-label="Abrir en nueva pestaña">
+                        <a class="map-icon-btn" href="mapa_web/index.html" target="_blank" rel="noopener"
+                            aria-label="Abrir en nueva pestaña">
                             <i data-lucide="external-link"></i>
                         </a>
                     </div>
@@ -338,14 +393,8 @@
                         <div class="loader-spinner"></div>
                         <p>Cargando mapa interactivo...</p>
                     </div>
-                    <iframe
-                        id="mapaIframe"
-                        src="mapa_web/index.html"
-                        width="100%"
-                        height="620"
-                        style="border:0;"
-                        onload="hideMapLoader()"
-                        title="Mapa interactivo de yacimientos generado en QGIS">
+                    <iframe id="mapaIframe" src="mapa_web/index.html" width="100%" height="620" style="border:0;"
+                        onload="hideMapLoader()" title="Mapa interactivo de yacimientos generado en QGIS">
                     </iframe>
                 </div>
             </div>
@@ -353,7 +402,7 @@
     </section>
 
 
-    <section class="section" id="descriptiva">
+    <section class="section page-section" id="descriptiva">
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-number">01</span>
@@ -370,8 +419,8 @@
                     <div class="card-icon"><i data-lucide="globe"></i></div>
                     <h3>Población</h3>
                     <p>Conjunto total de <strong>yacimientos</strong> de petróleo y gas
-                       registrados a nivel mundial en el Global Oil and Gas Extraction
-                       Tracker.</p>
+                        registrados a nivel mundial en el Global Oil and Gas Extraction
+                        Tracker.</p>
 
 
                     <div class="simbolico-block">
@@ -384,9 +433,9 @@
                     <div class="card-icon"><i data-lucide="user"></i></div>
                     <h3>Individuo</h3>
                     <p>Cada yacimiento registrado (pozo, campo, terminal o complejo) que
-                       forma parte de la población analizada.</p>
+                        forma parte de la población analizada.</p>
 
-                    
+
                     <div class="simbolico-block">
                         <span class="simbolico-label">Simbólico</span>
                         <code>xᵢ ∈ U<br>xᵢ = yacimiento individual</code>
@@ -397,9 +446,9 @@
                     <div class="card-icon"><i data-lucide="flask-conical"></i></div>
                     <h3>Muestra</h3>
                     <p>Subconjunto representativo de yacimientos seleccionados a partir
-                       del dataset para realizar el análisis estadístico.</p>
+                        del dataset para realizar el análisis estadístico.</p>
 
-                    
+
 
                     <div class="simbolico-block">
                         <span class="simbolico-label">Simbólico</span>
@@ -433,41 +482,431 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr><td>Unit ID</td><td>id_unidad</td><td>Código alfanumérico que distingue de forma inequívoca cada registro en la base de datos.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Nominal</td><td><code>D = { x | x es cadena alfanumérica }</code></td><td><code>R = { x | x identifica de forma única una unidad ∧ x ∈ hoja_de_datos }</code></td><td>Sistema de gestión de datos</td><td>Ninguna</td><td>Nominal</td></tr>
-                            <tr><td>Unit Name</td><td>nombre_unidad</td><td>Denominación con la que el proyecto es reconocido oficialmente en la fuente primaria.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Nominal</td><td><code>D = { x | x es cadena de texto }</code></td><td><code>R = { x | x es nombre de unidad energética ∧ x ∈ hoja_de_datos }</code></td><td>Documentación del proyecto</td><td>Ninguna</td><td>Nominal</td></tr>
-                            <tr><td>Unit name local script</td><td>nombre_local</td><td>Denominación del proyecto según el alfabeto o sistema de escritura del país de origen.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Nominal</td><td><code>D = { x | x es cadena de texto en escritura local }</code></td><td><code>R = { x | x es nombre local de unidad energética ∧ x ∈ hoja_de_datos }</code></td><td>Documentación del proyecto</td><td>Ninguna</td><td>Nominal</td></tr>
-                            <tr><td>Fuel type</td><td>tipo_combustible</td><td>Insumo energético primario explotado: petróleo, gas, carbón, nuclear, biocombustible u otro.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Nominal</td><td><code>D = { x | x ∈ { Oil, Gas, Coal, Nuclear, Biofuel, Other } }</code></td><td><code>R = { x | x es tipo de combustible ∧ x ∈ hoja_de_datos }</code></td><td>Clasificación energética</td><td>Ninguna</td><td>Nominal</td></tr>
-                            <tr><td>Unit type</td><td>tipo_unidad</td><td>Categoría funcional de la instalación en la cadena productiva: pozo, mina, planta, terminal, etc.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Nominal</td><td><code>D = { x | x ∈ { Well, Mine, Field, Plant, Pipeline, Terminal } }</code></td><td><code>R = { x | x es tipo de unidad ∧ x ∈ hoja_de_datos }</code></td><td>Clasificación técnica del proyecto</td><td>Ninguna</td><td>Nominal</td></tr>
-                            <tr><td>Country</td><td>pais</td><td>Territorio soberano en cuya jurisdicción se encuentra físicamente la instalación.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Nominal</td><td><code>D = { x | x es país reconocido internacionalmente }</code></td><td><code>R = { x | x es país con unidades registradas ∧ x ∈ hoja_de_datos }</code></td><td>Registro oficial / SIG</td><td>Ninguna</td><td>Nominal</td></tr>
-                            <tr><td>Subnational unit</td><td>unidad_sub</td><td>Entidad político-administrativa de nivel inferior al país: provincia, estado, departamento o región.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Nominal</td><td><code>D = { x | x es división subnacional de un país }</code></td><td><code>R = { x | x es división subnacional con unidades registradas ∧ x ∈ hoja_de_datos }</code></td><td>Registro oficial / SIG</td><td>Ninguna</td><td>Nominal</td></tr>
-                            <tr><td>Latitude</td><td>latitud</td><td>Componente norte-sur de la posición geográfica, expresada en grados decimales.</td><td><span class="badge cuantitativa">Cuantitativa</span></td><td>Continua</td><td><code>D = { x ∈ ℝ | −90 ≤ x ≤ 90 }</code></td><td><code>R = { x | x es latitud de unidades registradas ∧ x ∈ hoja_de_datos }</code></td><td>Sistema de posicionamiento</td><td>Grados decimales</td><td>Intervalo</td></tr>
-                            <tr><td>Longitude</td><td>longitud</td><td>Componente este-oeste de la posición geográfica, expresada en grados decimales.</td><td><span class="badge cuantitativa">Cuantitativa</span></td><td>Continua</td><td><code>D = { x ∈ ℝ | −180 ≤ x ≤ 180 }</code></td><td><code>R = { x | x es longitud de unidades registradas ∧ x ∈ hoja_de_datos }</code></td><td>Sistema de posicionamiento</td><td>Grados decimales</td><td>Intervalo</td></tr>
-                            <tr><td>Location accuracy</td><td>precision_ubi</td><td>Grado de confianza en la exactitud de las coordenadas registradas para la instalación.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Ordinal</td><td><code>D = { x | x ∈ { Exact, Approximate, Country-level, Unknown } }</code></td><td><code>R = { x | x es nivel de precisión registrado ∧ x ∈ hoja_de_datos }</code></td><td>Evaluación técnica del dato</td><td>Ninguna</td><td>Ordinal</td></tr>
-                            <tr><td>Status</td><td>estado</td><td>Fase del ciclo de vida en la que se encuentra la instalación: en operación, en construcción, propuesta, etc.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Ordinal</td><td><code>D = { x | x ∈ { Operating, Under Construction, Proposed, Shelved } }</code></td><td><code>R = { x | x es estado registrado ∧ x ∈ hoja_de_datos }</code></td><td>Informe del operador / registro</td><td>Ninguna</td><td>Ordinal</td></tr>
-                            <tr><td>Status year</td><td>año_estado</td><td>Momento en que se verificó o actualizó por última vez la condición operacional registrada.</td><td><span class="badge cuantitativa">Cuantitativa</span></td><td>Discreta</td><td><code>D = { x ∈ ℤ | x &gt; 0 }</code></td><td><code>R = { x ∈ ℤ | x es año de actualización de estado ∧ x ∈ hoja_de_datos }</code></td><td>Registro histórico / base de datos</td><td>Año (AAAA)</td><td>Intervalo</td></tr>
-                            <tr><td>Discovery year</td><td>año_descubrimiento</td><td>Momento en que fue confirmada la existencia comercial del yacimiento o recurso.</td><td><span class="badge cuantitativa">Cuantitativa</span></td><td>Discreta</td><td><code>D = { x ∈ ℤ | x &gt; 0 }</code></td><td><code>R = { x ∈ ℤ | x es año de descubrimiento ∧ x ∈ hoja_de_datos }</code></td><td>Registro histórico / exploración</td><td>Año (AAAA)</td><td>Intervalo</td></tr>
-                            <tr><td>FID</td><td>fid</td><td>Momento en que los inversores aprobaron formalmente el financiamiento para el desarrollo del proyecto.</td><td><span class="badge cuantitativa">Cuantitativa</span></td><td>Discreta</td><td><code>D = { x ∈ ℤ | x &gt; 0 }</code></td><td><code>R = { x ∈ ℤ | x es año de decisión de inversión ∧ x ∈ hoja_de_datos }</code></td><td>Registro financiero del proyecto</td><td>Año (AAAA)</td><td>Intervalo</td></tr>
-                            <tr><td>Year</td><td>año</td><td>Periodo de referencia temporal general al que corresponde el registro en la base de datos.</td><td><span class="badge cuantitativa">Cuantitativa</span></td><td>Discreta</td><td><code>D = { x ∈ ℤ | x &gt; 0 }</code></td><td><code>R = { x ∈ ℤ | x es año de referencia del registro ∧ x ∈ hoja_de_datos }</code></td><td>Registro temporal de la base de datos</td><td>Año (AAAA)</td><td>Intervalo</td></tr>
-                            <tr><td>Production start year</td><td>año_inicio_prod</td><td>Momento en que la instalación comenzó a extraer o procesar el recurso de forma comercial.</td><td><span class="badge cuantitativa">Cuantitativa</span></td><td>Discreta</td><td><code>D = { x ∈ ℤ | x &gt; 0 }</code></td><td><code>R = { x ∈ ℤ | x es año de inicio de producción ∧ x ∈ hoja_de_datos }</code></td><td>Registro operacional del proyecto</td><td>Año (AAAA)</td><td>Intervalo</td></tr>
-                            <tr><td>Operator</td><td>operador</td><td>Entidad técnica encargada de gestionar las operaciones diarias de la instalación.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Nominal</td><td><code>D = { x | x es nombre de empresa operadora }</code></td><td><code>R = { x | x es operadora registrada ∧ x ∈ hoja_de_datos }</code></td><td>Documentación corporativa / operacional</td><td>Ninguna</td><td>Nominal</td></tr>
-                            <tr><td>Owner</td><td>propietario</td><td>Persona jurídica o física con titularidad legal sobre el activo o el recurso.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Nominal</td><td><code>D = { x | x es nombre de propietario o accionista }</code></td><td><code>R = { x | x es propietario registrado ∧ x ∈ hoja_de_datos }</code></td><td>Documentación legal / corporativa</td><td>Ninguna</td><td>Nominal</td></tr>
-                            <tr><td>Parent</td><td>matriz</td><td>Corporación de nivel superior bajo cuya estructura societaria opera el dueño o el gestor de la instalación.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Nominal</td><td><code>D = { x | x es nombre de empresa matriz }</code></td><td><code>R = { x | x es empresa matriz registrada ∧ x ∈ hoja_de_datos }</code></td><td>Documentación corporativa</td><td>Ninguna</td><td>Nominal</td></tr>
-                            <tr><td>Basin</td><td>cuenca</td><td>Depresión geológica de acumulación sedimentaria donde se aloja el recurso explotado.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Nominal</td><td><code>D = { x | x es nombre de cuenca geológica }</code></td><td><code>R = { x | x es cuenca registrada ∧ x ∈ hoja_de_datos }</code></td><td>Cartografía geológica / SIG</td><td>Ninguna</td><td>Nominal</td></tr>
-                            <tr><td>Concession / block</td><td>bloque_concesion</td><td>Área geográfica delimitada por el ente regulador sobre la que se otorgan derechos de exploración o explotación.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Nominal</td><td><code>D = { x | x es código o nombre de bloque concesionado }</code></td><td><code>R = { x | x es concesión o bloque registrado ∧ x ∈ hoja_de_datos }</code></td><td>Registro gubernamental / ente regulador</td><td>Ninguna</td><td>Nominal</td></tr>
-                            <tr><td>Project or complex</td><td>proyecto_complejo</td><td>Agrupación de instalaciones o fases bajo una misma iniciativa de desarrollo energético.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Nominal</td><td><code>D = { x | x es nombre de proyecto o complejo energético }</code></td><td><code>R = { x | x es proyecto o complejo registrado ∧ x ∈ hoja_de_datos }</code></td><td>Documentación del proyecto</td><td>Ninguna</td><td>Nominal</td></tr>
-                            <tr><td>Government unit</td><td>unidad_gub</td><td>Dependencia estatal con facultades de regulación, concesión o participación accionaria sobre el activo.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Nominal</td><td><code>D = { x | x es nombre de entidad pública o gubernamental }</code></td><td><code>R = { x | x es entidad gubernamental registrada ∧ x ∈ hoja_de_datos }</code></td><td>Registro oficial del Estado</td><td>Ninguna</td><td>Nominal</td></tr>
-                            <tr><td>ID</td><td>id</td><td>Código de referencia cruzada que vincula el registro con otros sistemas o bases de datos.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Nominal</td><td><code>D = { x | x es cadena alfanumérica }</code></td><td><code>R = { x | x es identificador alternativo ∧ x ∈ hoja_de_datos }</code></td><td>Sistema de gestión de datos</td><td>Ninguna</td><td>Nominal</td></tr>
-                            <tr><td>Wiki</td><td>wiki</td><td>Recurso de consulta enciclopédica abierta asociado a la instalación o proyecto.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Nominal</td><td><code>D = { x | x es URL válida de Wikipedia }</code></td><td><code>R = { x | x es enlace Wikipedia registrado ∧ x ∈ hoja_de_datos }</code></td><td>Fuente web externa (Wikipedia)</td><td>Ninguna</td><td>Nominal</td></tr>
-                            <tr><td>URL</td><td>url</td><td>Dirección web que apunta a la fuente primaria o secundaria de donde proviene la información del registro.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Nominal</td><td><code>D = { x | x es URL válida }</code></td><td><code>R = { x | x es enlace de referencia registrado ∧ x ∈ hoja_de_datos }</code></td><td>Fuente web externa</td><td>Ninguna</td><td>Nominal</td></tr>
-                            <tr><td>Unit name2</td><td>nombre_unidad_2</td><td>Denominación alternativa o histórica con la que también se conoce la instalación.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Nominal</td><td><code>D = { x | x es cadena de texto }</code></td><td><code>R = { x | x es nombre alternativo de unidad ∧ x ∈ hoja_de_datos }</code></td><td>Documentación del proyecto</td><td>Ninguna</td><td>Nominal</td></tr>
-                            <tr><td>Production/reserves</td><td>reservas_prod</td><td>Indica si el valor cuantitativo corresponde a extracción efectiva o a estimación de recursos.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Nominal</td><td><code>D = { x | x ∈ { Production, Reserves } }</code></td><td><code>R = { x | x ∈ { Production, Reserves } }</code></td><td>Clasificación técnica del dato</td><td>Ninguna</td><td>Nominal</td></tr>
-                            <tr><td>Fuel description</td><td>desc_combustible</td><td>Especificación pormenorizada del recurso: grado, fracción, mezcla o subtipo dentro de la categoría energética.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Nominal</td><td><code>D = { x | x es descripción textual de combustible }</code></td><td><code>R = { x | x es descripción registrada ∧ x ∈ hoja_de_datos }</code></td><td>Clasificación técnica del proyecto</td><td>Ninguna</td><td>Nominal</td></tr>
-                            <tr><td>Reserves classification</td><td>origen_clasif_res</td><td>Categoría de certidumbre del volumen según el estándar de la fuente: probadas, probables, posibles o contingentes.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Ordinal</td><td><code>D = { x | x ∈ { Proved, Probable, Possible, Contingent } }</code></td><td><code>R = { x | x es categoría de reservas registrada ∧ x ∈ hoja_de_datos }</code></td><td>Informe técnico / normativa SPE</td><td>Ninguna</td><td>Ordinal</td></tr>
-                            <tr><td>Quantity (original)</td><td>cant_original</td><td>Volumen o masa consignado en la fuente primaria, sin ninguna transformación de unidades.</td><td><span class="badge cuantitativa">Cuantitativa</span></td><td>Continua</td><td><code>D = { x ∈ ℝ | x ≥ 0 }</code></td><td><code>R = { x ∈ ℝ | x es cantidad registrada ∧ x ∈ hoja_de_datos }</code></td><td>Medición técnica / informe de reservas</td><td>Variable / ver Units</td><td>Razón</td></tr>
-                            <tr><td>Units (original)</td><td>unid_original</td><td>Sistema de medida en el que el volumen fue reportado: Bcf, MMbbl, Mt, Tcf, PJ, etc.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Nominal</td><td><code>D = { x | x ∈ { Bcf, MMbbl, Mt, Tcf, PJ } }</code></td><td><code>R = { x | x es unidad registrada ∧ x ∈ hoja_de_datos }</code></td><td>Clasificación metrológica técnica</td><td>Ninguna</td><td>Nominal</td></tr>
-                            <tr><td>Data year</td><td>año_datos</td><td>Ejercicio o periodo al que corresponde el valor de producción o reservas consignado.</td><td><span class="badge cuantitativa">Cuantitativa</span></td><td>Discreta</td><td><code>D = { x ∈ ℤ | x &gt; 0 }</code></td><td><code>R = { x ∈ ℤ | x es año de referencia de datos ∧ x ∈ hoja_de_datos }</code></td><td>Registro temporal del informe</td><td>Año (AAAA)</td><td>Intervalo</td></tr>
-                            <tr><td>Quantity (converted)</td><td>cant_convertida</td><td>Volumen o masa reexpresado en la unidad estándar del estudio para facilitar la comparación.</td><td><span class="badge cuantitativa">Cuantitativa</span></td><td>Continua</td><td><code>D = { x ∈ ℝ | x ≥ 0 }</code></td><td><code>R = { x ∈ ℝ | x es cantidad registrada ∧ x ∈ hoja_de_datos }</code></td><td>Conversión técnica estandarizada</td><td>Variable / ver Units</td><td>Razón</td></tr>
-                            <tr><td>Units (converted)</td><td>unid_convertidas</td><td>Sistema de medida normalizado al que fueron homogeneizadas todas las cantidades para el análisis.</td><td><span class="badge cualitativa">Cualitativa</span></td><td>Nominal</td><td><code>D = { x | x ∈ { EJ, Mtoe, PJ, Bcf equivalente } }</code></td><td><code>R = { x | x es unidad estándar registrada ∧ x ∈ hoja_de_datos }</code></td><td>Clasificación metrológica</td><td>Ninguna</td><td>Nominal</td></tr>
+                            <tr>
+                                <td>Unit ID</td>
+                                <td>id_unidad</td>
+                                <td>Código alfanumérico que distingue cada activo en el repositorio global de
+                                    hidrocarburos.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Σ*}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Sistema de gestión de datos</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Unit Name</td>
+                                <td>nombre_unidad</td>
+                                <td>Designación comercial del yacimiento o instalación extractiva.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Σ*}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Documentación del proyecto</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Unit name local script</td>
+                                <td>nombre_local</td>
+                                <td>Escritura en idioma nativo del país productor de hidrocarburos.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Σ*}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Documentación del proyecto</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Unit name2</td>
+                                <td>nombre_unidad_2</td>
+                                <td>Alias o título previo del yacimiento o instalación extractiva.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Σ*}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Documentación del proyecto</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>ID</td>
+                                <td>id</td>
+                                <td>Código de enlace con repositorios internacionales de energía.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Σ*}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Sistema de gestión de datos</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Country</td>
+                                <td>pais</td>
+                                <td>Territorio soberano donde opera el activo de extracción de hidrocarburos.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Países reconocidos internacionalmente}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Registro oficial / SIG</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Subnational unit (province, state)</td>
+                                <td>unidad_sub</td>
+                                <td>Entidad subnacional (provincia o estado) que aloja el activo extractivo.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Divisiones subnacionales}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Registro oficial / SIG</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Latitude</td>
+                                <td>latitud</td>
+                                <td>Coordenada norte-sur del activo en el sistema geodésico global.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Continua</td>
+                                <td><code>D={x | x ∈ ℝ ∧ -90 ≤ x ≤ 90}</code></td>
+                                <td><code>R={x ∈ ℝ | -90 ≤ x ≤ 90 ∧ x ∈ dataset}</code></td>
+                                <td>GPS / SIG</td>
+                                <td>Grados decimales</td>
+                                <td>Intervalo</td>
+                            </tr>
+                            <tr>
+                                <td>Longitude</td>
+                                <td>longitud</td>
+                                <td>Coordenada este-oeste del yacimiento en el sistema geodésico global.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Continua</td>
+                                <td><code>D={x | x ∈ ℝ ∧ -180 ≤ x ≤ 180}</code></td>
+                                <td><code>R={x ∈ ℝ | -180 ≤ x ≤ 180 ∧ x ∈ dataset}</code></td>
+                                <td>GPS / SIG</td>
+                                <td>Grados decimales</td>
+                                <td>Intervalo</td>
+                            </tr>
+                            <tr>
+                                <td>Location accuracy</td>
+                                <td>precision_ubi</td>
+                                <td>Grado de exactitud geoespacial de las coordenadas del activo.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Ordinal</td>
+                                <td><code>D={'Exact', 'Approximate', 'Country-level', 'Unknown'}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Evaluación técnica geoespacial</td>
+                                <td>Ninguna</td>
+                                <td>Ordinal</td>
+                            </tr>
+                            <tr>
+                                <td>Year</td>
+                                <td>año</td>
+                                <td>Ejercicio anual al que pertenece el dato de extracción o reservas.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Discreta</td>
+                                <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Registro temporal de la base de datos</td>
+                                <td>Año (AAAA)</td>
+                                <td>Intervalo</td>
+                            </tr>
+                            <tr>
+                                <td>Discovery year</td>
+                                <td>año_descubrimiento</td>
+                                <td>Ejercicio en que se certificó el hallazgo comercial del yacimiento.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Discreta</td>
+                                <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Registro histórico / exploración geológica</td>
+                                <td>Año (AAAA)</td>
+                                <td>Intervalo</td>
+                            </tr>
+                            <tr>
+                                <td>FID</td>
+                                <td>fid</td>
+                                <td>Ejercicio en que se aprobó el desembolso definitivo del proyecto extractivo.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Discreta</td>
+                                <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Registro financiero del proyecto</td>
+                                <td>Año (AAAA)</td>
+                                <td>Intervalo</td>
+                            </tr>
+                            <tr>
+                                <td>Production start year</td>
+                                <td>año_inicio_prod</td>
+                                <td>Ejercicio en que el activo comenzó a extraer hidrocarburos comercialmente.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Discreta</td>
+                                <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Registro operacional del proyecto</td>
+                                <td>Año (AAAA)</td>
+                                <td>Intervalo</td>
+                            </tr>
+                            <tr>
+                                <td>Status year</td>
+                                <td>año_estado</td>
+                                <td>Ejercicio de la última revisión del ciclo de vida del activo.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Discreta</td>
+                                <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Registro histórico / base de datos del operador</td>
+                                <td>Año (AAAA)</td>
+                                <td>Intervalo</td>
+                            </tr>
+                            <tr>
+                                <td>Data year</td>
+                                <td>año_datos</td>
+                                <td>Ejercicio de referencia del volumen de extracción o reservas consignado.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Discreta</td>
+                                <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Registro temporal del informe</td>
+                                <td>Año (AAAA)</td>
+                                <td>Intervalo</td>
+                            </tr>
+                            <tr>
+                                <td>Fuel type</td>
+                                <td>tipo_combustible</td>
+                                <td>Energético primario explotado: petróleo, gas, carbón u otro hidrocarburo.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={'Oil', 'Gas', 'Coal', 'Nuclear', 'Biofuel', 'Other'}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Clasificación técnica del proyecto</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Unit type</td>
+                                <td>tipo_unidad</td>
+                                <td>Categoría del activo según su función en la cadena extractiva.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={'Well', 'Mine', 'Field', 'Plant', 'Pipeline', 'Terminal', ...}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Clasificación técnica del proyecto</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Status</td>
+                                <td>estado</td>
+                                <td>Fase operativa del activo: en producción, construcción, retirado, etc.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Ordinal</td>
+                                <td><code>D={'Operating', 'Under Construction', 'Proposed', 'Retired', 'Cancelled', 'Shelved'}</code>
+                                </td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Informe del operador / registro regulatorio</td>
+                                <td>Ninguno</td>
+                                <td>Ordinal</td>
+                            </tr>
+                            <tr>
+                                <td>Operator</td>
+                                <td>operador</td>
+                                <td>Compañía a cargo de la gestión diaria del activo extractivo.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Nombres de empresas operadoras}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Documentación corporativa / registro regulatorio</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Owner</td>
+                                <td>propietario</td>
+                                <td>Entidad con derechos legales sobre el yacimiento o instalación.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Nombres de propietarios o accionistas}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Documentación legal / corporativa</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Parent</td>
+                                <td>matriz</td>
+                                <td>Corporación de mayor jerarquía que controla al operador del activo.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Nombres de empresas matrices}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Documentación corporativa</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Government unit</td>
+                                <td>unidad_gub</td>
+                                <td>Ente público con atribuciones sobre la concesión o regulación del activo extractivo.
+                                </td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Nombres de entidades públicas}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Registro oficial del Estado</td>
+                                <td>Ninguno</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Basin</td>
+                                <td>cuenca</td>
+                                <td>Formación geológica sedimentaria donde se concentran los hidrocarburos.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Nombres de cuencas geológicas}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Cartografía geológica / SIG</td>
+                                <td>Ninguno</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Concession / block</td>
+                                <td>bloque_concesion</td>
+                                <td>Sector otorgado por el Estado para explorar o producir hidrocarburos.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Códigos o nombres de bloques concesionados}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Registro gubernamental / ente regulador</td>
+                                <td>Ninguno</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Project or complex</td>
+                                <td>proyecto_complejo</td>
+                                <td>Conjunto de activos vinculados bajo una misma iniciativa extractiva.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Nombres de proyectos o complejos energéticos}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Documentación del proyecto</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Wiki</td>
+                                <td>wiki</td>
+                                <td>URL enciclopédica de referencia abierta sobre el activo o yacimiento.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ URLs válidas de Wikipedia}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Fuente web externa (Wikipedia)</td>
+                                <td>Ninguno</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>URL</td>
+                                <td>url</td>
+                                <td>Dirección web de la fuente primaria o secundaria del dato consignado.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ URLs válidas}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Fuente web externa</td>
+                                <td>Ninguno</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Production/reserves</td>
+                                <td>reservas_prod</td>
+                                <td>Clasificación que diferencia extracción efectiva de volúmenes estimados en el
+                                    subsuelo.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={'Production', 'Reserves'}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Clasificación técnica del dato</td>
+                                <td>Ninguno</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Fuel description</td>
+                                <td>desc_combustible</td>
+                                <td>Subtipo o grado del hidrocarburo explotado (crudo liviano, GNL, etc.).</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Descripciones textuales de combustibles}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Clasificación técnica del proyecto</td>
+                                <td>Ninguno</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Reserves classification (original)</td>
+                                <td>origen_clasif_res</td>
+                                <td>Categoría de certidumbre del volumen según la norma SPE-PRMS.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Ordinal</td>
+                                <td><code>D={'Proved', 'Probable', 'Possible', 'Contingent', 'Prospective', ...}</code>
+                                </td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Informe técnico / normativa SPE-PRMS</td>
+                                <td>Ninguna</td>
+                                <td>Ordinal</td>
+                            </tr>
+                            <tr>
+                                <td>Quantity (original)</td>
+                                <td>cant_original</td>
+                                <td>Volumen de hidrocarburos tal como figura en la fuente primaria.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Continua</td>
+                                <td><code>D={x | x ∈ ℝ ∧ x ≥ 0}</code></td>
+                                <td><code>R={x ∈ ℝ | x ≥ 0 ∧ x ∈ dataset}</code></td>
+                                <td>Medición técnica / informe de reservas</td>
+                                <td>Ver 'Units (original)'</td>
+                                <td>Razón</td>
+                            </tr>
+                            <tr>
+                                <td>Units (original)</td>
+                                <td>unid_originales</td>
+                                <td>Unidad de medida empleada en la fuente de origen (Bcf, MMbbl, Mt, etc.).</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={'Bcf', 'MMbbl', 'Mt', 'Tcf', 'PJ', ...}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Clasificación metrológica técnica</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Quantity (converted)</td>
+                                <td>cant_convertida</td>
+                                <td>Volumen de extracción o reservas normalizado a la unidad estándar del análisis.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Continua</td>
+                                <td><code>D={x | x ∈ ℝ ∧ x ≥ 0}</code></td>
+                                <td><code>R={x ∈ ℝ | x ≥ 0 ∧ x ∈ dataset}</code></td>
+                                <td>Conversión técnica estandarizada</td>
+                                <td>Ver 'Units (converted)'</td>
+                                <td>Razón</td>
+                            </tr>
+                            <tr>
+                                <td>Units (converted)</td>
+                                <td>unid_convertidas</td>
+                                <td>Unidad estandarizada a la que se transformaron todos los volúmenes del estudio.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={'EJ', 'Mtoe', 'PJ', 'Bcf eq.', ...}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Clasificación metrológica estándar</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -486,7 +925,8 @@
                 <div class="rpubs-grid">
                     <a href="#" target="_blank" rel="noopener" class="rpub-card">
                         <div class="rpub-watermark">01</div>
-                        <div class="rpub-top"><span class="rpub-tag">RPubs</span><span class="rpub-meta">Descriptivo</span></div>
+                        <div class="rpub-top"><span class="rpub-tag">RPubs</span><span
+                                class="rpub-meta">Descriptivo</span></div>
                         <div class="rpub-icon-wrap"><i data-lucide="file-bar-chart"></i></div>
                         <h4 class="rpub-title">Análisis descriptivo</h4>
                         <p class="rpub-text"></p>
@@ -494,7 +934,8 @@
                     </a>
                     <a href="#" target="_blank" rel="noopener" class="rpub-card">
                         <div class="rpub-watermark">02</div>
-                        <div class="rpub-top"><span class="rpub-tag">RPubs</span><span class="rpub-meta">Geográfico</span></div>
+                        <div class="rpub-top"><span class="rpub-tag">RPubs</span><span
+                                class="rpub-meta">Geográfico</span></div>
                         <div class="rpub-icon-wrap"><i data-lucide="map"></i></div>
                         <h4 class="rpub-title">Distribución geográfica</h4>
                         <p class="rpub-text"></p>
@@ -502,7 +943,8 @@
                     </a>
                     <a href="#" target="_blank" rel="noopener" class="rpub-card">
                         <div class="rpub-watermark">03</div>
-                        <div class="rpub-top"><span class="rpub-tag">RPubs</span><span class="rpub-meta">Temporal</span></div>
+                        <div class="rpub-top"><span class="rpub-tag">RPubs</span><span class="rpub-meta">Temporal</span>
+                        </div>
                         <div class="rpub-icon-wrap"><i data-lucide="calendar-clock"></i></div>
                         <h4 class="rpub-title">Análisis temporal</h4>
                         <p class="rpub-text"></p>
@@ -510,7 +952,8 @@
                     </a>
                     <a href="#" target="_blank" rel="noopener" class="rpub-card">
                         <div class="rpub-watermark">04</div>
-                        <div class="rpub-top"><span class="rpub-tag">RPubs</span><span class="rpub-meta">Producción</span></div>
+                        <div class="rpub-top"><span class="rpub-tag">RPubs</span><span
+                                class="rpub-meta">Producción</span></div>
                         <div class="rpub-icon-wrap"><i data-lucide="droplet"></i></div>
                         <h4 class="rpub-title">Reservas y producción</h4>
                         <p class="rpub-text"></p>
@@ -523,7 +966,7 @@
 
 
 
-    <section class="section section-alt" id="inferencial">
+    <section class="section section-alt page-section" id="inferencial">
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-number">02</span>
@@ -562,13 +1005,440 @@
                 <div class="table-scroll">
                     <table class="data-table data-table-hover">
                         <thead>
-                            <tr><th>Modelo / prueba</th><th>Variable analizada</th><th>Estadístico</th><th>p-valor</th><th>Decisión</th></tr>
+                            <tr>
+                                <th>Modelo / prueba</th>
+                                <th>Variable analizada</th>
+                                <th>Estadístico</th>
+                                <th>p-valor</th>
+                                <th>Decisión</th>
+                            </tr>
                         </thead>
                         <tbody>
-                            <tr><td>Chi-cuadrado</td><td>año_descubrimiento</td><td>—</td><td>—</td><td><span class="badge badge-ok">Pendiente</span></td></tr>
-                            <tr><td>Prueba de medias</td><td>cant_convertida</td><td>—</td><td>—</td><td><span class="badge badge-ok">Pendiente</span></td></tr>
-                            <tr><td>Bondad de ajuste</td><td>año_inicio_prod</td><td>—</td><td>—</td><td><span class="badge badge-warn">En desarrollo</span></td></tr>
-                            <tr><td>Correlación</td><td>latitud × longitud</td><td>—</td><td>—</td><td><span class="badge badge-ok">Pendiente</span></td></tr>
+                            <tr>
+                                <td>Unit ID</td>
+                                <td>id_unidad</td>
+                                <td>Código alfanumérico que distingue cada activo en el repositorio global de
+                                    hidrocarburos.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Σ*}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Sistema de gestión de datos</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Unit Name</td>
+                                <td>nombre_unidad</td>
+                                <td>Designación comercial del yacimiento o instalación extractiva.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Σ*}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Documentación del proyecto</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Unit name local script</td>
+                                <td>nombre_local</td>
+                                <td>Escritura en idioma nativo del país productor de hidrocarburos.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Σ*}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Documentación del proyecto</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Unit name2</td>
+                                <td>nombre_unidad_2</td>
+                                <td>Alias o título previo del yacimiento o instalación extractiva.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Σ*}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Documentación del proyecto</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>ID</td>
+                                <td>id</td>
+                                <td>Código de enlace con repositorios internacionales de energía.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Σ*}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Sistema de gestión de datos</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Country</td>
+                                <td>pais</td>
+                                <td>Territorio soberano donde opera el activo de extracción de hidrocarburos.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Países reconocidos internacionalmente}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Registro oficial / SIG</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Subnational unit (province, state)</td>
+                                <td>unidad_sub</td>
+                                <td>Entidad subnacional (provincia o estado) que aloja el activo extractivo.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Divisiones subnacionales}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Registro oficial / SIG</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Latitude</td>
+                                <td>latitud</td>
+                                <td>Coordenada norte-sur del activo en el sistema geodésico global.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Continua</td>
+                                <td><code>D={x | x ∈ ℝ ∧ -90 ≤ x ≤ 90}</code></td>
+                                <td><code>R={x ∈ ℝ | -90 ≤ x ≤ 90 ∧ x ∈ dataset}</code></td>
+                                <td>GPS / SIG</td>
+                                <td>Grados decimales</td>
+                                <td>Intervalo</td>
+                            </tr>
+                            <tr>
+                                <td>Longitude</td>
+                                <td>longitud</td>
+                                <td>Coordenada este-oeste del yacimiento en el sistema geodésico global.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Continua</td>
+                                <td><code>D={x | x ∈ ℝ ∧ -180 ≤ x ≤ 180}</code></td>
+                                <td><code>R={x ∈ ℝ | -180 ≤ x ≤ 180 ∧ x ∈ dataset}</code></td>
+                                <td>GPS / SIG</td>
+                                <td>Grados decimales</td>
+                                <td>Intervalo</td>
+                            </tr>
+                            <tr>
+                                <td>Location accuracy</td>
+                                <td>precision_ubi</td>
+                                <td>Grado de exactitud geoespacial de las coordenadas del activo.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Ordinal</td>
+                                <td><code>D={'Exact', 'Approximate', 'Country-level', 'Unknown'}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Evaluación técnica geoespacial</td>
+                                <td>Ninguna</td>
+                                <td>Ordinal</td>
+                            </tr>
+                            <tr>
+                                <td>Year</td>
+                                <td>año</td>
+                                <td>Ejercicio anual al que pertenece el dato de extracción o reservas.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Discreta</td>
+                                <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Registro temporal de la base de datos</td>
+                                <td>Año (AAAA)</td>
+                                <td>Intervalo</td>
+                            </tr>
+                            <tr>
+                                <td>Discovery year</td>
+                                <td>año_descubrimiento</td>
+                                <td>Ejercicio en que se certificó el hallazgo comercial del yacimiento.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Discreta</td>
+                                <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Registro histórico / exploración geológica</td>
+                                <td>Año (AAAA)</td>
+                                <td>Intervalo</td>
+                            </tr>
+                            <tr>
+                                <td>FID</td>
+                                <td>fid</td>
+                                <td>Ejercicio en que se aprobó el desembolso definitivo del proyecto extractivo.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Discreta</td>
+                                <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Registro financiero del proyecto</td>
+                                <td>Año (AAAA)</td>
+                                <td>Intervalo</td>
+                            </tr>
+                            <tr>
+                                <td>Production start year</td>
+                                <td>año_inicio_prod</td>
+                                <td>Ejercicio en que el activo comenzó a extraer hidrocarburos comercialmente.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Discreta</td>
+                                <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Registro operacional del proyecto</td>
+                                <td>Año (AAAA)</td>
+                                <td>Intervalo</td>
+                            </tr>
+                            <tr>
+                                <td>Status year</td>
+                                <td>año_estado</td>
+                                <td>Ejercicio de la última revisión del ciclo de vida del activo.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Discreta</td>
+                                <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Registro histórico / base de datos del operador</td>
+                                <td>Año (AAAA)</td>
+                                <td>Intervalo</td>
+                            </tr>
+                            <tr>
+                                <td>Data year</td>
+                                <td>año_datos</td>
+                                <td>Ejercicio de referencia del volumen de extracción o reservas consignado.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Discreta</td>
+                                <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Registro temporal del informe</td>
+                                <td>Año (AAAA)</td>
+                                <td>Intervalo</td>
+                            </tr>
+                            <tr>
+                                <td>Fuel type</td>
+                                <td>tipo_combustible</td>
+                                <td>Energético primario explotado: petróleo, gas, carbón u otro hidrocarburo.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={'Oil', 'Gas', 'Coal', 'Nuclear', 'Biofuel', 'Other'}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Clasificación técnica del proyecto</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Unit type</td>
+                                <td>tipo_unidad</td>
+                                <td>Categoría del activo según su función en la cadena extractiva.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={'Well', 'Mine', 'Field', 'Plant', 'Pipeline', 'Terminal', ...}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Clasificación técnica del proyecto</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Status</td>
+                                <td>estado</td>
+                                <td>Fase operativa del activo: en producción, construcción, retirado, etc.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Ordinal</td>
+                                <td><code>D={'Operating', 'Under Construction', 'Proposed', 'Retired', 'Cancelled', 'Shelved'}</code>
+                                </td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Informe del operador / registro regulatorio</td>
+                                <td>Ninguno</td>
+                                <td>Ordinal</td>
+                            </tr>
+                            <tr>
+                                <td>Operator</td>
+                                <td>operador</td>
+                                <td>Compañía a cargo de la gestión diaria del activo extractivo.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Nombres de empresas operadoras}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Documentación corporativa / registro regulatorio</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Owner</td>
+                                <td>propietario</td>
+                                <td>Entidad con derechos legales sobre el yacimiento o instalación.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Nombres de propietarios o accionistas}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Documentación legal / corporativa</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Parent</td>
+                                <td>matriz</td>
+                                <td>Corporación de mayor jerarquía que controla al operador del activo.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Nombres de empresas matrices}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Documentación corporativa</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Government unit</td>
+                                <td>unidad_gub</td>
+                                <td>Ente público con atribuciones sobre la concesión o regulación del activo extractivo.
+                                </td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Nombres de entidades públicas}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Registro oficial del Estado</td>
+                                <td>Ninguno</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Basin</td>
+                                <td>cuenca</td>
+                                <td>Formación geológica sedimentaria donde se concentran los hidrocarburos.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Nombres de cuencas geológicas}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Cartografía geológica / SIG</td>
+                                <td>Ninguno</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Concession / block</td>
+                                <td>bloque_concesion</td>
+                                <td>Sector otorgado por el Estado para explorar o producir hidrocarburos.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Códigos o nombres de bloques concesionados}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Registro gubernamental / ente regulador</td>
+                                <td>Ninguno</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Project or complex</td>
+                                <td>proyecto_complejo</td>
+                                <td>Conjunto de activos vinculados bajo una misma iniciativa extractiva.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Nombres de proyectos o complejos energéticos}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Documentación del proyecto</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Wiki</td>
+                                <td>wiki</td>
+                                <td>URL enciclopédica de referencia abierta sobre el activo o yacimiento.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ URLs válidas de Wikipedia}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Fuente web externa (Wikipedia)</td>
+                                <td>Ninguno</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>URL</td>
+                                <td>url</td>
+                                <td>Dirección web de la fuente primaria o secundaria del dato consignado.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ URLs válidas}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Fuente web externa</td>
+                                <td>Ninguno</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Production/reserves</td>
+                                <td>reservas_prod</td>
+                                <td>Clasificación que diferencia extracción efectiva de volúmenes estimados en el
+                                    subsuelo.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={'Production', 'Reserves'}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Clasificación técnica del dato</td>
+                                <td>Ninguno</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Fuel description</td>
+                                <td>desc_combustible</td>
+                                <td>Subtipo o grado del hidrocarburo explotado (crudo liviano, GNL, etc.).</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x | x ∈ Descripciones textuales de combustibles}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Clasificación técnica del proyecto</td>
+                                <td>Ninguno</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Reserves classification (original)</td>
+                                <td>origen_clasif_res</td>
+                                <td>Categoría de certidumbre del volumen según la norma SPE-PRMS.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Ordinal</td>
+                                <td><code>D={'Proved', 'Probable', 'Possible', 'Contingent', 'Prospective', ...}</code>
+                                </td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Informe técnico / normativa SPE-PRMS</td>
+                                <td>Ninguna</td>
+                                <td>Ordinal</td>
+                            </tr>
+                            <tr>
+                                <td>Quantity (original)</td>
+                                <td>cant_original</td>
+                                <td>Volumen de hidrocarburos tal como figura en la fuente primaria.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Continua</td>
+                                <td><code>D={x | x ∈ ℝ ∧ x ≥ 0}</code></td>
+                                <td><code>R={x ∈ ℝ | x ≥ 0 ∧ x ∈ dataset}</code></td>
+                                <td>Medición técnica / informe de reservas</td>
+                                <td>Ver 'Units (original)'</td>
+                                <td>Razón</td>
+                            </tr>
+                            <tr>
+                                <td>Units (original)</td>
+                                <td>unid_originales</td>
+                                <td>Unidad de medida empleada en la fuente de origen (Bcf, MMbbl, Mt, etc.).</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={'Bcf', 'MMbbl', 'Mt', 'Tcf', 'PJ', ...}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Clasificación metrológica técnica</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
+                            <tr>
+                                <td>Quantity (converted)</td>
+                                <td>cant_convertida</td>
+                                <td>Volumen de extracción o reservas normalizado a la unidad estándar del análisis.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Continua</td>
+                                <td><code>D={x | x ∈ ℝ ∧ x ≥ 0}</code></td>
+                                <td><code>R={x ∈ ℝ | x ≥ 0 ∧ x ∈ dataset}</code></td>
+                                <td>Conversión técnica estandarizada</td>
+                                <td>Ver 'Units (converted)'</td>
+                                <td>Razón</td>
+                            </tr>
+                            <tr>
+                                <td>Units (converted)</td>
+                                <td>unid_convertidas</td>
+                                <td>Unidad estandarizada a la que se transformaron todos los volúmenes del estudio.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={'EJ', 'Mtoe', 'PJ', 'Bcf eq.', ...}</code></td>
+                                <td><code>R ⊂ D</code></td>
+                                <td>Clasificación metrológica estándar</td>
+                                <td>Ninguna</td>
+                                <td>Nominal</td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -577,7 +1447,7 @@
     </section>
 
 
-    <section class="section" id="regresion">
+    <section class="section page-section" id="regresion">
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-number">03</span>
@@ -589,18 +1459,42 @@
             </div>
 
             <div class="cards-grid reveal">
-                <article class="card"><div class="card-icon"><i data-lucide="line-chart"></i></div><h3>Modelo 01</h3><p>Próximamente.</p></article>
-                <article class="card"><div class="card-icon"><i data-lucide="trending-up"></i></div><h3>Modelo 02</h3><p>Próximamente.</p></article>
-                <article class="card"><div class="card-icon"><i data-lucide="scatter-chart"></i></div><h3>Modelo 03</h3><p>Próximamente.</p></article>
-                <article class="card"><div class="card-icon"><i data-lucide="git-compare"></i></div><h3>Modelo 04</h3><p>Próximamente.</p></article>
-                <article class="card"><div class="card-icon"><i data-lucide="activity"></i></div><h3>Modelo 05</h3><p>Próximamente.</p></article>
-                <article class="card"><div class="card-icon"><i data-lucide="bar-chart-4"></i></div><h3>Modelo 06</h3><p>Próximamente.</p></article>
+                <article class="card">
+                    <div class="card-icon"><i data-lucide="line-chart"></i></div>
+                    <h3>Modelo 01</h3>
+                    <p>Próximamente.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon"><i data-lucide="trending-up"></i></div>
+                    <h3>Modelo 02</h3>
+                    <p>Próximamente.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon"><i data-lucide="scatter-chart"></i></div>
+                    <h3>Modelo 03</h3>
+                    <p>Próximamente.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon"><i data-lucide="git-compare"></i></div>
+                    <h3>Modelo 04</h3>
+                    <p>Próximamente.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon"><i data-lucide="activity"></i></div>
+                    <h3>Modelo 05</h3>
+                    <p>Próximamente.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon"><i data-lucide="bar-chart-4"></i></div>
+                    <h3>Modelo 06</h3>
+                    <p>Próximamente.</p>
+                </article>
             </div>
         </div>
     </section>
 
 
-    <section class="section section-alt" id="machine-learning">
+    <section class="section section-alt page-section" id="machine-learning">
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-number">04</span>
@@ -612,33 +1506,83 @@
             </div>
 
             <div class="cards-grid reveal">
-                <article class="card card-ml"><div class="card-icon"><i data-lucide="git-branch"></i></div><h3>Clasificación de yacimientos</h3><p>Modelos supervisados que categorizan los yacimientos según tipo de combustible, estado o etapa del ciclo de vida.</p></article>
-                <article class="card card-ml"><div class="card-icon"><i data-lucide="ruler"></i></div><h3>Predicción de reservas</h3><p>Regresión que estima la cantidad convertida en función de variables geográficas, geológicas y temporales.</p></article>
-                <article class="card card-ml"><div class="card-icon"><i data-lucide="circle-dashed"></i></div><h3>Agrupamiento (clustering)</h3><p>K-Means y DBSCAN aplicados sobre latitud, longitud y cuenca para identificar agrupaciones espaciales naturales.</p></article>
-                <article class="card card-ml"><div class="card-icon"><i data-lucide="search"></i></div><h3>Detección de patrones</h3><p>Análisis de correlaciones entre año de descubrimiento, FID e inicio de producción para identificar tendencias.</p></article>
-                <article class="card card-ml"><div class="card-icon"><i data-lucide="cpu"></i></div><h3>Entrenamiento del modelo</h3><p>División del conjunto en entrenamiento y validación, ajuste de hiperparámetros y validación cruzada.</p></article>
-                <article class="card card-ml"><div class="card-icon"><i data-lucide="gauge"></i></div><h3>Evaluación del modelo</h3><p>Métricas como accuracy, precisión, recall, F1-score, R² y RMSE para medir desempeño predictivo.</p></article>
+                <article class="card card-ml">
+                    <div class="card-icon"><i data-lucide="git-branch"></i></div>
+                    <h3>Clasificación de yacimientos</h3>
+                    <p>Modelos supervisados que categorizan los yacimientos según tipo de combustible, estado o etapa
+                        del ciclo de vida.</p>
+                </article>
+                <article class="card card-ml">
+                    <div class="card-icon"><i data-lucide="ruler"></i></div>
+                    <h3>Predicción de reservas</h3>
+                    <p>Regresión que estima la cantidad convertida en función de variables geográficas, geológicas y
+                        temporales.</p>
+                </article>
+                <article class="card card-ml">
+                    <div class="card-icon"><i data-lucide="circle-dashed"></i></div>
+                    <h3>Agrupamiento (clustering)</h3>
+                    <p>K-Means y DBSCAN aplicados sobre latitud, longitud y cuenca para identificar agrupaciones
+                        espaciales naturales.</p>
+                </article>
+                <article class="card card-ml">
+                    <div class="card-icon"><i data-lucide="search"></i></div>
+                    <h3>Detección de patrones</h3>
+                    <p>Análisis de correlaciones entre año de descubrimiento, FID e inicio de producción para
+                        identificar tendencias.</p>
+                </article>
+                <article class="card card-ml">
+                    <div class="card-icon"><i data-lucide="cpu"></i></div>
+                    <h3>Entrenamiento del modelo</h3>
+                    <p>División del conjunto en entrenamiento y validación, ajuste de hiperparámetros y validación
+                        cruzada.</p>
+                </article>
+                <article class="card card-ml">
+                    <div class="card-icon"><i data-lucide="gauge"></i></div>
+                    <h3>Evaluación del modelo</h3>
+                    <p>Métricas como accuracy, precisión, recall, F1-score, R² y RMSE para medir desempeño predictivo.
+                    </p>
+                </article>
             </div>
 
             <div class="pipeline reveal">
                 <h3 class="pipeline-title">Flujo del pipeline de aprendizaje</h3>
                 <div class="pipeline-steps">
-                    <div class="pipeline-step"><div class="step-icon"><i data-lucide="database"></i></div><span class="step-num">01</span><h4>Datos</h4><p>Tracker GEM</p></div>
+                    <div class="pipeline-step">
+                        <div class="step-icon"><i data-lucide="database"></i></div><span class="step-num">01</span>
+                        <h4>Datos</h4>
+                        <p>Tracker GEM</p>
+                    </div>
                     <div class="pipeline-arrow"><i data-lucide="arrow-right"></i></div>
-                    <div class="pipeline-step"><div class="step-icon"><i data-lucide="filter"></i></div><span class="step-num">02</span><h4>Limpieza</h4><p>Eliminación de ruido</p></div>
+                    <div class="pipeline-step">
+                        <div class="step-icon"><i data-lucide="filter"></i></div><span class="step-num">02</span>
+                        <h4>Limpieza</h4>
+                        <p>Eliminación de ruido</p>
+                    </div>
                     <div class="pipeline-arrow"><i data-lucide="arrow-right"></i></div>
-                    <div class="pipeline-step"><div class="step-icon"><i data-lucide="cpu"></i></div><span class="step-num">03</span><h4>Entrenamiento</h4><p>Ajuste del modelo</p></div>
+                    <div class="pipeline-step">
+                        <div class="step-icon"><i data-lucide="cpu"></i></div><span class="step-num">03</span>
+                        <h4>Entrenamiento</h4>
+                        <p>Ajuste del modelo</p>
+                    </div>
                     <div class="pipeline-arrow"><i data-lucide="arrow-right"></i></div>
-                    <div class="pipeline-step"><div class="step-icon"><i data-lucide="check-circle"></i></div><span class="step-num">04</span><h4>Evaluación</h4><p>Validación de métricas</p></div>
+                    <div class="pipeline-step">
+                        <div class="step-icon"><i data-lucide="check-circle"></i></div><span class="step-num">04</span>
+                        <h4>Evaluación</h4>
+                        <p>Validación de métricas</p>
+                    </div>
                     <div class="pipeline-arrow"><i data-lucide="arrow-right"></i></div>
-                    <div class="pipeline-step"><div class="step-icon"><i data-lucide="sparkles"></i></div><span class="step-num">05</span><h4>Predicción</h4><p>Resultados aplicados</p></div>
+                    <div class="pipeline-step">
+                        <div class="step-icon"><i data-lucide="sparkles"></i></div><span class="step-num">05</span>
+                        <h4>Predicción</h4>
+                        <p>Resultados aplicados</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <section class="section section-alt" id="mas">
+    <section class="section section-alt page-section" id="mas">
         <div class="container">
             <div class="section-header reveal">
                 <span class="section-number">06</span>
@@ -650,25 +1594,62 @@
             </div>
 
             <div class="tabs-nav reveal" id="tabsNav">
-                <button class="tab-btn active" data-tab="sobre-nosotros"><i data-lucide="users"></i> Sobre nosotros</button>
-                <button class="tab-btn" data-tab="herramientas"><i data-lucide="wrench"></i> Herramientas usadas</button>
+                <button class="tab-btn active" data-tab="sobre-nosotros"><i data-lucide="users"></i> Sobre
+                    nosotros</button>
+                <button class="tab-btn" data-tab="herramientas"><i data-lucide="wrench"></i> Herramientas
+                    usadas</button>
                 <button class="tab-btn" data-tab="conclusiones"><i data-lucide="award"></i> Conclusiones</button>
             </div>
 
             <div class="tab-panel active reveal" id="tab-sobre-nosotros">
                 <div class="team-grid">
-                    <article class="team-card"><div class="team-avatar">RT</div><h4>Ronny Taipe</h4><p class="team-role">Integrante</p><a href="cv/ronny.pdf" target="_blank" rel="noopener" class="team-link"><i data-lucide="file-text"></i> Ver CV</a></article>
-                    <article class="team-card"><div class="team-avatar">JM</div><h4>Jordy Madroñero</h4><p class="team-role">Integrante</p><a href="cv/jordy.pdf" target="_blank" rel="noopener" class="team-link"><i data-lucide="file-text"></i> Ver CV</a></article>
-                    <article class="team-card"><div class="team-avatar">EE</div><h4>Estalin Echeverria</h4><p class="team-role">Integrante</p><a href="cv/estalin.pdf" target="_blank" rel="noopener" class="team-link"><i data-lucide="file-text"></i> Ver CV</a></article>
-                    <article class="team-card"><div class="team-avatar">JR</div><h4>Jordan Ramirez</h4><p class="team-role">Integrante</p><a href="cv/jordan.pdf" target="_blank" rel="noopener" class="team-link"><i data-lucide="file-text"></i> Ver CV</a></article>
+                    <article class="team-card">
+                        <div class="team-avatar">RT</div>
+                        <h4>Ronny Taipe</h4>
+                        <p class="team-role">Integrante</p><a href="cv/ronny.pdf" target="_blank" rel="noopener"
+                            class="team-link"><i data-lucide="file-text"></i> Ver CV</a>
+                    </article>
+                    <article class="team-card">
+                        <div class="team-avatar">JM</div>
+                        <h4>Jordy Madroñero</h4>
+                        <p class="team-role">Integrante</p><a href="cv/jordy.pdf" target="_blank" rel="noopener"
+                            class="team-link"><i data-lucide="file-text"></i> Ver CV</a>
+                    </article>
+                    <article class="team-card">
+                        <div class="team-avatar">EE</div>
+                        <h4>Estalin Echeverria</h4>
+                        <p class="team-role">Integrante</p><a href="cv/estalin.pdf" target="_blank" rel="noopener"
+                            class="team-link"><i data-lucide="file-text"></i> Ver CV</a>
+                    </article>
+                    <article class="team-card">
+                        <div class="team-avatar">JR</div>
+                        <h4>Jordan Ramirez</h4>
+                        <p class="team-role">Integrante</p><a href="cv/jordan.pdf" target="_blank" rel="noopener"
+                            class="team-link"><i data-lucide="file-text"></i> Ver CV</a>
+                    </article>
                 </div>
             </div>
 
             <div class="tab-panel reveal" id="tab-herramientas">
                 <div class="tools-grid">
-                    <article class="tool-card"><div class="tool-icon"><i data-lucide="code-2"></i></div><h4>Visual Studio Code</h4><p>Editor utilizado para el desarrollo del sitio web, scripts y la organización del proyecto.</p></article>
-                    <article class="tool-card"><div class="tool-icon"><i data-lucide="map"></i></div><h4>QGIS</h4><p>Sistema de información geográfica para procesar las coordenadas y generar el mapa web interactivo con clustering.</p></article>
-                    <article class="tool-card"><div class="tool-icon"><i data-lucide="database"></i></div><h4>Kaggle</h4><p>Plataforma utilizada para la obtención del dataset Global Oil and Gas Extraction Tracker y el análisis preliminar.</p></article>
+                    <article class="tool-card">
+                        <div class="tool-icon"><i data-lucide="code-2"></i></div>
+                        <h4>Visual Studio Code</h4>
+                        <p>Editor utilizado para el desarrollo del sitio web, scripts y la organización del proyecto.
+                        </p>
+                    </article>
+                    <article class="tool-card">
+                        <div class="tool-icon"><i data-lucide="map"></i></div>
+                        <h4>QGIS</h4>
+                        <p>Sistema de información geográfica para procesar las coordenadas y generar el mapa web
+                            interactivo con clustering.</p>
+                    </article>
+                    <article class="tool-card">
+                        <div class="tool-icon"><i data-lucide="database"></i></div>
+                        <h4>Kaggle</h4>
+                        <p>Plataforma utilizada para la obtención del dataset Global Oil and Gas Extraction Tracker y el
+                            análisis preliminar.</p>
+                    </article>
                 </div>
             </div>
 
@@ -676,7 +1657,8 @@
                 <div class="placeholder-note">
                     <i data-lucide="hourglass"></i>
                     <h4>Conclusiones en desarrollo</h4>
-                    <p>Esta sección se completará una vez finalizadas las fases de análisis inferencial, regresión y machine learning del proyecto.</p>
+                    <p>Esta sección se completará una vez finalizadas las fases de análisis inferencial, regresión y
+                        machine learning del proyecto.</p>
                 </div>
             </div>
         </div>
@@ -684,16 +1666,64 @@
 
 
     <footer class="footer">
-        <div class="container footer-container">
-            <div class="footer-brand">
-                <span class="logo-icon"><i data-lucide="droplet"></i></span>
-                <span class="logo-text">ANÁLISIS ESTADÍSTICO<span class="logo-dot">.</span></span>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="footer-brand">
+                        <span class="logo-icon"><i data-lucide="droplet"></i></span>
+                        <span class="logo-text">ANÁLISIS ESTADÍSTICO<span class="logo-dot">.</span></span>
+                    </div>
+                    <p class="footer-text">
+                        Análisis estadístico aplicado al Global Oil and Gas Extraction Tracker —
+                        Global Energy Monitor.
+                    </p>
+                    <div class="footer-socials">
+                        <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i
+                                data-lucide="github"></i></a>
+                        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i
+                                data-lucide="linkedin"></i></a>
+                        <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i
+                                data-lucide="twitter"></i></a>
+                        <a href="mailto:contacto@uce.edu.ec" aria-label="Correo"><i data-lucide="mail"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Equipo de Desarrollo</h4>
+                    <ul class="footer-team">
+                        <li>
+                            <i data-lucide="user"></i>
+                            <div class="team-member-info">
+                                <span class="team-name">Ronny Taipe</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i data-lucide="user"></i>
+                            <div class="team-member-info">
+                                <span class="team-name">Jordy Madroñero</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i data-lucide="user"></i>
+                            <div class="team-member-info">
+                                <span class="team-name">Estalin Echeverria</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i data-lucide="user"></i>
+                            <div class="team-member-info">
+                                <span class="team-name">Jordan Ramirez</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <p class="footer-text">
-                Análisis estadístico aplicado al Global Oil and Gas Extraction Tracker —
-                Global Energy Monitor.
-            </p>
-            <p class="footer-copy">© 2026 — Análisis Estadístico Petrolero. Todos los derechos reservados.</p>
+
+            <div class="footer-bottom">
+                <p class="footer-copy">© 2026 — Análisis Estadístico Petrolero. Todos los derechos reservados.</p>
+                <p class="footer-made-with">Desarrollado con <i data-lucide="heart" class="heart-icon"></i> en la UCE
+                </p>
+            </div>
         </div>
     </footer>
 
@@ -704,4 +1734,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
