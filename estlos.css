@@ -2025,6 +2025,13 @@ button {
     }
 }
 
+.map-source {
+    text-align: right;
+    font-size: 0.8rem;
+    color: var(--color-slate);
+    margin-top: 0.5rem;
+}
+
 .concept-card-ext {
     display: flex;
     flex-direction: column;

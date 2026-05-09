@@ -102,7 +102,7 @@
                 </span>
 
                 <h1 class="hero-title">
-                    Análisis <em>Estadístico</em> de
+                    Análisis Estadístico de
                     <span class="title-accent">extracción de petróleo y gas</span>
                 </h1>
 
@@ -171,7 +171,7 @@
             <div class="motivation-wrapper reveal">
                 <div class="motivation-content">
                     <span class="section-number">00.1</span>
-                    <h2 class="section-title">Motivación del <em>proyecto</em></h2>
+                    <h2 class="section-title">Motivación del proyecto</h2>
                     <p class="motivation-text">
                         Este proyecto nace de la necesidad de comprender profundamente la dinámica global de extracción
                         de hidrocarburos. A través de la aplicación de herramientas estadísticas, espaciales y de
@@ -203,39 +203,6 @@
                     del análisis estadístico.
                 </p>
             </div>
-
-
-            <article class="marco-card marco-card-main reveal">
-                <h3 class="marco-title">Planteamiento del problema</h3>
-
-                <p class="marco-text">
-                    <strong>El análisis estadístico es importante porque permite</strong>
-                    organizar, interpretar y descubrir patrones dentro de grandes
-                    volúmenes de información, transformando datos brutos en conocimiento
-                    útil para la toma de decisiones. Aplicado al sector energético,
-                    facilita comprender cómo se distribuyen y evolucionan los recursos
-                    extraídos del subsuelo.
-                </p>
-
-                <p class="marco-text">
-                    La información sobre exploración y explotación de hidrocarburos a
-                    <strong>nivel mundial</strong> requiere organización y análisis
-                    para comprender su comportamiento histórico, territorial y su
-                    evolución dentro del marco productivo global. El conjunto de datos
-                    <em>Global Oil and Gas Extraction Tracker</em>, publicado por
-                    Global Energy Monitor, integra registros de yacimientos de
-                    petróleo y gas distribuidos por todo el mundo, lo que demanda un
-                    tratamiento estadístico riguroso para transformar esos datos en
-                    información útil para la interpretación, la planificación y la
-                    toma de decisiones.
-                </p>
-
-                <a href="https://docs.google.com/spreadsheets/d/1tVpz5Zs5HKDdKjCo4nE_qLPBKQ_pbsm7/edit?usp=sharing"
-                    target="_blank" rel="noopener" class="marco-cta">
-                    <i data-lucide="file-spreadsheet"></i>
-                    Ver dataset unificado
-                </a>
-            </article>
 
 
             <div class="map-info reveal" style="margin-top:3rem;">
@@ -313,7 +280,7 @@
                             <div class="marco-item-content">
                                 <h4>Estadística descriptiva</h4>
                                 <p>
-                                    Analizar la situación actual de los yacimientos de
+                                    Describir la situación actual de los yacimientos de
                                     petróleo y gas registrados globalmente, a través
                                     del estudio de sus características principales
                                     mediante medidas estadísticas descriptivas.
@@ -337,7 +304,7 @@
                             <div class="marco-item-content">
                                 <h4>Análisis predictivo</h4>
                                 <p>
-                                    Identificar y determinar relaciones entre las
+                                    Determinar relaciones entre las
                                     variables asociadas a los yacimientos (tipo de
                                     combustible, ubicación, reservas, año de
                                     descubrimiento) con el propósito de realizar
@@ -349,6 +316,38 @@
                     </ol>
                 </article>
             </div>
+
+            <article class="marco-card marco-card-main reveal" style="margin-top:3rem;">
+                <h3 class="marco-title">Planteamiento del problema</h3>
+
+                <p class="marco-text">
+                    <strong>El análisis estadístico es importante porque permite</strong>
+                    organizar, interpretar y descubrir patrones dentro de grandes
+                    volúmenes de información, transformando datos brutos en conocimiento
+                    útil para la toma de decisiones. Aplicado al sector energético,
+                    facilita comprender cómo se distribuyen y evolucionan los recursos
+                    extraídos del subsuelo.
+                </p>
+
+                <p class="marco-text">
+                    La información sobre exploración y explotación de hidrocarburos a
+                    <strong>nivel mundial</strong> requiere organización y análisis
+                    para comprender su comportamiento histórico, territorial y su
+                    evolución dentro del marco productivo global. El conjunto de datos
+                    <em>Global Oil and Gas Extraction Tracker</em>, publicado por
+                    Global Energy Monitor, integra registros de yacimientos de
+                    petróleo y gas distribuidos por todo el mundo, lo que demanda un
+                    tratamiento estadístico riguroso para transformar esos datos en
+                    información útil para la interpretación, la planificación y la
+                    toma de decisiones.
+                </p>
+
+                <a href="https://docs.google.com/spreadsheets/d/1tVpz5Zs5HKDdKjCo4nE_qLPBKQ_pbsm7/edit?usp=sharing"
+                    target="_blank" rel="noopener" class="marco-cta">
+                    <i data-lucide="file-spreadsheet"></i>
+                    Ver dataset unificado
+                </a>
+            </article>
         </div>
     </section>
 
@@ -445,8 +444,9 @@
                 <article class="card concept-card-ext">
                     <div class="card-icon"><i data-lucide="flask-conical"></i></div>
                     <h3>Muestra</h3>
-                    <p>Subconjunto representativo de yacimientos seleccionados a partir
-                        del dataset para realizar el análisis estadístico.</p>
+                    <p>Subconjunto validado obtenido tras limpiar los registros incompletos,
+                        descartando aquellos con datos faltantes en campos clave como latitud
+                        y longitud.</p>
 
 
 
@@ -470,7 +470,7 @@
                         <thead>
                             <tr>
                                 <th>Nombre original</th>
-                                <th>Nombre</th>
+                                <th>Variable (Código)</th>
                                 <th>Descripción</th>
                                 <th>Tipo</th>
                                 <th>Subtipo</th>
@@ -478,7 +478,7 @@
                                 <th>Rango</th>
                                 <th>Instrumento</th>
                                 <th>Unidad</th>
-                                <th>Escala</th>
+                                <th>Escala de medición</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -574,7 +574,7 @@
                                 <td><span class="badge cuantitativa">Cuantitativa</span></td>
                                 <td>Continua</td>
                                 <td><code>D={x | x ∈ ℝ ∧ -90 ≤ x ≤ 90}</code></td>
-                                <td><code>R={x ∈ ℝ | -90 ≤ x ≤ 90 ∧ x ∈ dataset}</code></td>
+                                <td><code>[-90, 90]</code></td>
                                 <td>GPS / SIG</td>
                                 <td>Grados decimales</td>
                                 <td>Intervalo</td>
@@ -586,7 +586,7 @@
                                 <td><span class="badge cuantitativa">Cuantitativa</span></td>
                                 <td>Continua</td>
                                 <td><code>D={x | x ∈ ℝ ∧ -180 ≤ x ≤ 180}</code></td>
-                                <td><code>R={x ∈ ℝ | -180 ≤ x ≤ 180 ∧ x ∈ dataset}</code></td>
+                                <td><code>[-180, 180]</code></td>
                                 <td>GPS / SIG</td>
                                 <td>Grados decimales</td>
                                 <td>Intervalo</td>
@@ -605,24 +605,24 @@
                             </tr>
                             <tr>
                                 <td>Year</td>
-                                <td>año</td>
+                                <td>anio</td>
                                 <td>Ejercicio anual al que pertenece el dato de extracción o reservas.</td>
                                 <td><span class="badge cuantitativa">Cuantitativa</span></td>
                                 <td>Discreta</td>
                                 <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
-                                <td><code>R ⊂ D</code></td>
+                                <td><code>[1, 2024]</code></td>
                                 <td>Registro temporal de la base de datos</td>
                                 <td>Año (AAAA)</td>
                                 <td>Intervalo</td>
                             </tr>
                             <tr>
                                 <td>Discovery year</td>
-                                <td>año_descubrimiento</td>
+                                <td>anio_descubrimiento</td>
                                 <td>Ejercicio en que se certificó el hallazgo comercial del yacimiento.</td>
                                 <td><span class="badge cuantitativa">Cuantitativa</span></td>
                                 <td>Discreta</td>
                                 <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
-                                <td><code>R ⊂ D</code></td>
+                                <td><code>[1, 2024]</code></td>
                                 <td>Registro histórico / exploración geológica</td>
                                 <td>Año (AAAA)</td>
                                 <td>Intervalo</td>
@@ -634,43 +634,43 @@
                                 <td><span class="badge cuantitativa">Cuantitativa</span></td>
                                 <td>Discreta</td>
                                 <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
-                                <td><code>R ⊂ D</code></td>
+                                <td><code>[1, 2024]</code></td>
                                 <td>Registro financiero del proyecto</td>
                                 <td>Año (AAAA)</td>
                                 <td>Intervalo</td>
                             </tr>
                             <tr>
                                 <td>Production start year</td>
-                                <td>año_inicio_prod</td>
+                                <td>anio_inicio_prod</td>
                                 <td>Ejercicio en que el activo comenzó a extraer hidrocarburos comercialmente.</td>
                                 <td><span class="badge cuantitativa">Cuantitativa</span></td>
                                 <td>Discreta</td>
                                 <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
-                                <td><code>R ⊂ D</code></td>
+                                <td><code>[1, 2024]</code></td>
                                 <td>Registro operacional del proyecto</td>
                                 <td>Año (AAAA)</td>
                                 <td>Intervalo</td>
                             </tr>
                             <tr>
                                 <td>Status year</td>
-                                <td>año_estado</td>
+                                <td>anio_estado</td>
                                 <td>Ejercicio de la última revisión del ciclo de vida del activo.</td>
                                 <td><span class="badge cuantitativa">Cuantitativa</span></td>
                                 <td>Discreta</td>
                                 <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
-                                <td><code>R ⊂ D</code></td>
+                                <td><code>[1, 2024]</code></td>
                                 <td>Registro histórico / base de datos del operador</td>
                                 <td>Año (AAAA)</td>
                                 <td>Intervalo</td>
                             </tr>
                             <tr>
                                 <td>Data year</td>
-                                <td>año_datos</td>
+                                <td>anio_datos</td>
                                 <td>Ejercicio de referencia del volumen de extracción o reservas consignado.</td>
                                 <td><span class="badge cuantitativa">Cuantitativa</span></td>
                                 <td>Discreta</td>
                                 <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
-                                <td><code>R ⊂ D</code></td>
+                                <td><code>[1, 2024]</code></td>
                                 <td>Registro temporal del informe</td>
                                 <td>Año (AAAA)</td>
                                 <td>Intervalo</td>
@@ -866,7 +866,7 @@
                                 <td><span class="badge cuantitativa">Cuantitativa</span></td>
                                 <td>Continua</td>
                                 <td><code>D={x | x ∈ ℝ ∧ x ≥ 0}</code></td>
-                                <td><code>R={x ∈ ℝ | x ≥ 0 ∧ x ∈ dataset}</code></td>
+                                <td><code>[0, ∞)</code></td>
                                 <td>Medición técnica / informe de reservas</td>
                                 <td>Ver 'Units (original)'</td>
                                 <td>Razón</td>
@@ -890,7 +890,7 @@
                                 <td><span class="badge cuantitativa">Cuantitativa</span></td>
                                 <td>Continua</td>
                                 <td><code>D={x | x ∈ ℝ ∧ x ≥ 0}</code></td>
-                                <td><code>R={x ∈ ℝ | x ≥ 0 ∧ x ∈ dataset}</code></td>
+                                <td><code>[0, ∞)</code></td>
                                 <td>Conversión técnica estandarizada</td>
                                 <td>Ver 'Units (converted)'</td>
                                 <td>Razón</td>
@@ -1106,7 +1106,7 @@
                                 <td><span class="badge cuantitativa">Cuantitativa</span></td>
                                 <td>Continua</td>
                                 <td><code>D={x | x ∈ ℝ ∧ -90 ≤ x ≤ 90}</code></td>
-                                <td><code>R={x ∈ ℝ | -90 ≤ x ≤ 90 ∧ x ∈ dataset}</code></td>
+                                <td><code>[-90, 90]</code></td>
                                 <td>GPS / SIG</td>
                                 <td>Grados decimales</td>
                                 <td>Intervalo</td>
@@ -1118,7 +1118,7 @@
                                 <td><span class="badge cuantitativa">Cuantitativa</span></td>
                                 <td>Continua</td>
                                 <td><code>D={x | x ∈ ℝ ∧ -180 ≤ x ≤ 180}</code></td>
-                                <td><code>R={x ∈ ℝ | -180 ≤ x ≤ 180 ∧ x ∈ dataset}</code></td>
+                                <td><code>[-180, 180]</code></td>
                                 <td>GPS / SIG</td>
                                 <td>Grados decimales</td>
                                 <td>Intervalo</td>
@@ -1137,24 +1137,24 @@
                             </tr>
                             <tr>
                                 <td>Year</td>
-                                <td>año</td>
+                                <td>anio</td>
                                 <td>Ejercicio anual al que pertenece el dato de extracción o reservas.</td>
                                 <td><span class="badge cuantitativa">Cuantitativa</span></td>
                                 <td>Discreta</td>
                                 <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
-                                <td><code>R ⊂ D</code></td>
+                                <td><code>[1, 2024]</code></td>
                                 <td>Registro temporal de la base de datos</td>
                                 <td>Año (AAAA)</td>
                                 <td>Intervalo</td>
                             </tr>
                             <tr>
                                 <td>Discovery year</td>
-                                <td>año_descubrimiento</td>
+                                <td>anio_descubrimiento</td>
                                 <td>Ejercicio en que se certificó el hallazgo comercial del yacimiento.</td>
                                 <td><span class="badge cuantitativa">Cuantitativa</span></td>
                                 <td>Discreta</td>
                                 <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
-                                <td><code>R ⊂ D</code></td>
+                                <td><code>[1, 2024]</code></td>
                                 <td>Registro histórico / exploración geológica</td>
                                 <td>Año (AAAA)</td>
                                 <td>Intervalo</td>
@@ -1166,43 +1166,43 @@
                                 <td><span class="badge cuantitativa">Cuantitativa</span></td>
                                 <td>Discreta</td>
                                 <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
-                                <td><code>R ⊂ D</code></td>
+                                <td><code>[1, 2024]</code></td>
                                 <td>Registro financiero del proyecto</td>
                                 <td>Año (AAAA)</td>
                                 <td>Intervalo</td>
                             </tr>
                             <tr>
                                 <td>Production start year</td>
-                                <td>año_inicio_prod</td>
+                                <td>anio_inicio_prod</td>
                                 <td>Ejercicio en que el activo comenzó a extraer hidrocarburos comercialmente.</td>
                                 <td><span class="badge cuantitativa">Cuantitativa</span></td>
                                 <td>Discreta</td>
                                 <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
-                                <td><code>R ⊂ D</code></td>
+                                <td><code>[1, 2024]</code></td>
                                 <td>Registro operacional del proyecto</td>
                                 <td>Año (AAAA)</td>
                                 <td>Intervalo</td>
                             </tr>
                             <tr>
                                 <td>Status year</td>
-                                <td>año_estado</td>
+                                <td>anio_estado</td>
                                 <td>Ejercicio de la última revisión del ciclo de vida del activo.</td>
                                 <td><span class="badge cuantitativa">Cuantitativa</span></td>
                                 <td>Discreta</td>
                                 <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
-                                <td><code>R ⊂ D</code></td>
+                                <td><code>[1, 2024]</code></td>
                                 <td>Registro histórico / base de datos del operador</td>
                                 <td>Año (AAAA)</td>
                                 <td>Intervalo</td>
                             </tr>
                             <tr>
                                 <td>Data year</td>
-                                <td>año_datos</td>
+                                <td>anio_datos</td>
                                 <td>Ejercicio de referencia del volumen de extracción o reservas consignado.</td>
                                 <td><span class="badge cuantitativa">Cuantitativa</span></td>
                                 <td>Discreta</td>
                                 <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
-                                <td><code>R ⊂ D</code></td>
+                                <td><code>[1, 2024]</code></td>
                                 <td>Registro temporal del informe</td>
                                 <td>Año (AAAA)</td>
                                 <td>Intervalo</td>
@@ -1398,7 +1398,7 @@
                                 <td><span class="badge cuantitativa">Cuantitativa</span></td>
                                 <td>Continua</td>
                                 <td><code>D={x | x ∈ ℝ ∧ x ≥ 0}</code></td>
-                                <td><code>R={x ∈ ℝ | x ≥ 0 ∧ x ∈ dataset}</code></td>
+                                <td><code>[0, ∞)</code></td>
                                 <td>Medición técnica / informe de reservas</td>
                                 <td>Ver 'Units (original)'</td>
                                 <td>Razón</td>
@@ -1422,7 +1422,7 @@
                                 <td><span class="badge cuantitativa">Cuantitativa</span></td>
                                 <td>Continua</td>
                                 <td><code>D={x | x ∈ ℝ ∧ x ≥ 0}</code></td>
-                                <td><code>R={x ∈ ℝ | x ≥ 0 ∧ x ∈ dataset}</code></td>
+                                <td><code>[0, ∞)</code></td>
                                 <td>Conversión técnica estandarizada</td>
                                 <td>Ver 'Units (converted)'</td>
                                 <td>Razón</td>
