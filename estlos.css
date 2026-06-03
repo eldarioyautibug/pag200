@@ -2974,7 +2974,6 @@ button {
 }
 
 .map-preview:hover .map-preview-image img {
-    /* Eliminamos el hover scale automático porque interfiere con el zoom manual */
 }
 
 .map-preview-shine {
@@ -5066,4 +5065,62 @@ section.hero.active-page {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+.var-category {
+    margin-top: var(--space-xl);
+}
+
+.var-category-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.45rem, 2.6vw, 1.85rem);
+    font-weight: 600;
+    color: var(--color-petroleum);
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding-bottom: 0.8rem;
+    margin: 0 0 var(--space-lg);
+    border-bottom: 2px solid var(--color-border);
+}
+
+.var-category-title [data-lucide] {
+    width: 1.4rem;
+    height: 1.4rem;
+    stroke-width: 1.8;
+    color: var(--color-gold);
+    flex-shrink: 0;
+}
+
+.var-subtype {
+    margin-bottom: var(--space-lg);
+}
+
+.var-subtype:last-child {
+    margin-bottom: 0;
+}
+
+.var-subtype-title {
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-slate);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    margin: 0 0 1.1rem;
+}
+
+.var-subtype-title::before {
+    content: '';
+    width: 28px;
+    height: 2px;
+    background: var(--color-gold);
+    border-radius: 2px;
+    flex-shrink: 0;
 }
