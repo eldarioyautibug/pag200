@@ -101,7 +101,7 @@ button {
 }
 
 .section {
-    padding: var(--space-2xl) 0;
+    padding: var(--space-lg) 0;
     position: relative;
 }
 
@@ -112,7 +112,7 @@ button {
 .section-header {
     text-align: center;
     max-width: 720px;
-    margin: 0 auto var(--space-xl);
+    margin: 0 auto var(--space-lg);
 }
 
 .section-number {
@@ -579,7 +579,7 @@ button {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-md);
 }
 
 .card {
@@ -1645,8 +1645,9 @@ button {
 
 @media (max-width: 640px) {
     :root {
-        --space-2xl: 4rem;
-        --space-xl: 3rem;
+        --space-2xl: 2.5rem;
+        --space-xl: 2rem;
+        --space-lg: 1.5rem;
     }
 
     .hero {
@@ -2348,15 +2349,14 @@ button {
 }
 
 .rpubs-section {
-    margin-top: var(--space-xl);
-
+    margin-top: var(--space-lg);
 }
 
 .rpubs-header {
     text-align: center;
     max-width: 720px;
-    margin: 0 auto var(--space-lg);
-    padding-bottom: 1.5rem;
+    margin: 0 auto var(--space-md);
+    padding-bottom: 1rem;
     position: relative;
 }
 
@@ -2600,7 +2600,7 @@ button {
 }
 
 .rpubs-section {
-    margin-top: var(--space-xl);
+    margin-top: var(--space-lg);
 }
 
 .rpubs-header {
@@ -3944,7 +3944,7 @@ button {
 }
 
 .rpubs-section {
-    margin: var(--space-xl) auto 0;
+    margin: var(--space-md) auto 0;
     max-width: 1200px;
     width: 100%;
     padding: 0 var(--space-md);
@@ -5069,7 +5069,7 @@ section.hero.active-page {
 
 
 .var-category {
-    margin-top: var(--space-xl);
+    margin-top: var(--space-md);
 }
 
 .var-category-title {
