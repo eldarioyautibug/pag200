@@ -15,6 +15,7 @@
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="estlos.css">
 </head>
 
@@ -1397,6 +1398,13 @@
                         </thead>
                         <tbody>
                             <tr>
+                                <td colspan="5" style="text-align: center; padding: 3rem; color: var(--color-slate);">
+                                    <i data-lucide="clock" style="width: 24px; height: 24px; margin-bottom: 0.5rem; display: block; margin-left: auto; margin-right: auto;"></i>
+                                    Resultados del análisis inferencial en proceso...
+                                </td>
+                            </tr>
+<!--
+                            <tr>
                                 <td>Unit ID</td>
                                 <td>id_unidad</td>
                                 <td>Código alfanumérico que distingue cada activo en el repositorio global de
@@ -1810,6 +1818,7 @@
                                 <td>Ninguna</td>
                                 <td>Nominal</td>
                             </tr>
+-->
                         </tbody>
                     </table>
                 </div>
@@ -2066,22 +2075,52 @@
             <div class="tab-panel reveal" id="tab-herramientas">
                 <div class="tools-grid">
                     <article class="tool-card">
+                        <div class="tool-icon"><i data-lucide="bar-chart-2"></i></div>
+                        <h4>R Studio</h4>
+                        <p>Entorno principal para el cálculo estadístico, modelos de regresión y generación de reportes en RPubs.</p>
+                        <div class="tool-tag">Estadística</div>
+                    </article>
+                    <article class="tool-card">
                         <div class="tool-icon"><i data-lucide="code-2"></i></div>
                         <h4>Visual Studio Code</h4>
-                        <p>Editor utilizado para el desarrollo del sitio web, scripts y la organización del proyecto.
-                        </p>
+                        <p>Editor para todo el desarrollo frontend del sitio: HTML, CSS, JavaScript y control de versiones.</p>
+                        <div class="tool-tag">Desarrollo Web</div>
+                    </article>
+                    <article class="tool-card">
+                        <div class="tool-icon"><i data-lucide="terminal"></i></div>
+                        <h4>Python</h4>
+                        <p>Lenguaje utilizado para el modelo de Machine Learning y el procesamiento de datos del proyecto.</p>
+                        <div class="tool-tag">Machine Learning</div>
+                    </article>
+                    <article class="tool-card">
+                        <div class="tool-icon"><i data-lucide="cloud"></i></div>
+                        <h4>Posit Cloud</h4>
+                        <p>Entorno de R en la nube utilizado para ejecutar los análisis estadísticos del proyecto.</p>
+                        <div class="tool-tag">Estadística</div>
+                    </article>
+                    <article class="tool-card">
+                        <div class="tool-icon"><i data-lucide="line-chart"></i></div>
+                        <h4>RPubs</h4>
+                        <p>Plataforma donde se publicaron los reportes estadísticos generados en R para consulta pública.</p>
+                        <div class="tool-tag">Reportes</div>
+                    </article>
+                    <article class="tool-card">
+                        <div class="tool-icon"><i data-lucide="hard-drive"></i></div>
+                        <h4>Google Drive</h4>
+                        <p>Repositorio utilizado para almacenar y compartir los datasets y recursos del proyecto.</p>
+                        <div class="tool-tag">Almacenamiento</div>
                     </article>
                     <article class="tool-card">
                         <div class="tool-icon"><i data-lucide="map"></i></div>
                         <h4>QGIS</h4>
-                        <p>Sistema de información geográfica para procesar las coordenadas y generar el mapa web
-                            interactivo con clustering.</p>
+                        <p>Sistema de información geográfica para crear el mapa de ubicación de pozos petroleros y el visor interactivo.</p>
+                        <div class="tool-tag">SIG / Cartografía</div>
                     </article>
                     <article class="tool-card">
                         <div class="tool-icon"><i data-lucide="database"></i></div>
                         <h4>Kaggle</h4>
-                        <p>Plataforma utilizada para la obtención del dataset Global Oil and Gas Extraction Tracker y el
-                            análisis preliminar.</p>
+                        <p>Fuente del dataset histórico (1940-2018) sobre producción de petróleo y gas en Brasil utilizado en el estudio.</p>
+                        <div class="tool-tag">Dataset</div>
                     </article>
                 </div>
             </div>
@@ -2111,12 +2150,12 @@
                         Global Energy Monitor.
                     </p>
                     <div class="footer-socials">
-                        <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub"><i
-                                data-lucide="github"></i></a>
-                        <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><i
-                                data-lucide="linkedin"></i></a>
-                        <a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i
-                                data-lucide="twitter"></i></a>
+                        <a href="https://www.instagram.com/figempa_uce/" target="_blank" rel="noopener" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/Figempa/?locale=es_LA" target="_blank" rel="noopener" aria-label="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/Figempa_UCE" target="_blank" rel="noopener" aria-label="Twitter"><i
+                                class="fab fa-x-twitter"></i></a>
                         <a href="mailto:contacto@uce.edu.ec" aria-label="Correo"><i data-lucide="mail"></i></a>
                     </div>
                 </div>

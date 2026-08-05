@@ -1355,16 +1355,16 @@ button {
 .footer {
     background: var(--color-charcoal);
     color: rgba(255, 255, 255, 0.75);
-    padding: var(--space-2xl) 0 1.5rem;
-    margin-top: var(--space-2xl);
+    padding: 1.5rem 0 1rem;
+    margin-top: 2rem;
     border-top: 4px solid var(--color-gold);
 }
 
 .footer-grid {
     display: flex;
     justify-content: space-between;
-    gap: 3rem;
-    margin-bottom: 3rem;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 @media (max-width: 992px) {
@@ -1418,9 +1418,15 @@ button {
     transform: translateY(-3px);
 }
 
-.footer-socials a [data-lucide] {
+.footer-socials a [data-lucide],
+.footer-socials a i.fab,
+.footer-socials a i.fas {
     width: 18px;
     height: 18px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footer-heading {
@@ -1481,7 +1487,7 @@ button {
 }
 
 .footer-bottom {
-    padding-top: 1.5rem;
+    padding-top: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     display: flex;
     justify-content: space-between;
@@ -1877,6 +1883,24 @@ button {
     font-size: 0.92rem;
     color: var(--color-slate);
     line-height: 1.6;
+}
+
+.tool-tag {
+    display: inline-block;
+    border: 1px solid var(--color-gold);
+    color: var(--color-gold);
+    padding: 0.35rem 1.25rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    margin-top: 1.25rem;
+    background: transparent;
+    transition: all var(--transition);
+}
+
+.tool-card:hover .tool-tag {
+    background: var(--color-gold);
+    color: white;
 }
 
 
