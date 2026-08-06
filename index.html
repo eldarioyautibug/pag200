@@ -191,7 +191,7 @@
                 <h2 class="section-title">Introducción</h2>
                 <p class="section-subtitle">
                     Contexto del proyecto, mapa de ubicación de los yacimientos y objetivos
-                    del análisis estadístico.
+                    del análisis estadístico:
                 </p>
             </div>
 
@@ -252,29 +252,21 @@
 
             <div class="marco-grid reveal" style="margin-top:1.5rem;">
                 <article class="marco-card">
-                    <h3 class="marco-title">Objetivo general</h3>
+                    <h3 class="marco-title">Objetivo General</h3>
                     <p class="marco-text">
-                        Analizar la información del <strong>Global Oil and Gas Extraction
-                            Tracker</strong> sobre los yacimientos de petróleo y gas a
-                        nivel mundial, con el fin de identificar su distribución
-                        geográfica, evolución temporal y características principales
-                        mediante herramientas estadísticas, de visualización espacial
-                        y de aprendizaje automático.
+                        Aplicar la estadística para el análisis de los yacimientos de petróleo y gas a nivel mundial, mediante el uso de herramientas computacionales como Machine Learning, RStudio, etc.
                     </p>
                 </article>
 
                 <article class="marco-card marco-card-list">
-                    <h3 class="marco-title">Objetivos específicos</h3>
+                    <h3 class="marco-title">Objetivos Específicos</h3>
                     <ol class="marco-list">
                         <li class="marco-item">
                             <span class="marco-item-num">01</span>
                             <div class="marco-item-content">
                                 <h4>Estadística descriptiva</h4>
                                 <p>
-                                    Describir la situación actual de los yacimientos de
-                                    petróleo y gas registrados globalmente, a través
-                                    del estudio de sus características principales
-                                    mediante medidas estadísticas descriptivas.
+                                    Conocer la situación actual de los yacimientos de petróleo y gas registrados a nivel mundial hasta 2024, a través de sus características más importantes y medidas estadísticas.
                                 </p>
                             </div>
                         </li>
@@ -283,24 +275,16 @@
                             <div class="marco-item-content">
                                 <h4>Modelos probabilísticos</h4>
                                 <p>
-                                    Aplicar modelos de probabilidad e inferencia
-                                    estadística para obtener conclusiones sobre el
-                                    comportamiento de los yacimientos del dataset
-                                    GOGET, a partir del análisis de los datos disponibles.
+                                    Emplear modelos de probabilidad para establecer conclusiones sobre el comportamiento de los yacimientos de petróleo y gas a partir de los resultados de la muestra.
                                 </p>
                             </div>
                         </li>
                         <li class="marco-item">
                             <span class="marco-item-num">03</span>
                             <div class="marco-item-content">
-                                <h4>Análisis predictivo</h4>
+                                <h4>Análisis de relaciones</h4>
                                 <p>
-                                    Determinar relaciones entre las
-                                    variables asociadas a los yacimientos (tipo de
-                                    combustible, ubicación, reservas, año de
-                                    descubrimiento) con el propósito de realizar
-                                    estimaciones y fortalecer el análisis predictivo
-                                    mediante machine learning.
+                                    Deducir relaciones entre las variables asociadas a los yacimientos de petróleo y gas con el fin de realizar estimaciones sobre el estudio.
                                 </p>
                             </div>
                         </li>
@@ -312,34 +296,21 @@
                 <h3 class="marco-title">Planteamiento del problema</h3>
 
                 <p class="marco-text">
-                    <strong>El análisis estadístico es importante porque permite</strong>
-                    organizar, interpretar y descubrir patrones dentro de grandes
-                    volúmenes de información, transformando datos brutos en <strong>información útil</strong>
-                    para la toma de decisiones. Aplicado al sector energético, y específicamente
-                    a los yacimientos de petróleo y gas, facilita comprender cómo se
-                    distribuyen y evolucionan los recursos que sostienen la industria
-                    y la economía mundial.
+                    La explotación de petróleo y gas constituye una actividad de gran relevancia a nivel mundial, debido a su impacto en la economía, el desarrollo energético y el uso de los recursos naturales. La estadística desempeña un papel fundamental, ya que permite organizar, interpretar y descubrir patrones en grandes volúmenes de información, transformando datos brutos en <strong>información útil</strong> para la toma de decisiones. Como caso de estudio se tomó un conjunto de datos obtenido de la plataforma Kaggle, basado en el <em>Global Oil and Gas Extraction Tracker</em>.
                 </p>
 
-                <p class="marco-text">
-                    La información sobre exploración y explotación de hidrocarburos a
-                    <strong>nivel mundial</strong> requiere organización y análisis
-                    para comprender su comportamiento histórico, territorial y su
-                    evolución dentro del marco productivo global. Para este análisis
-                    partimos de una fuente primaria de datos brutos, conocida como el
-                    <strong>Dataset KG (Kaggle)</strong>, basado en el <em>Global Oil
-                    and Gas Extraction Tracker</em>. Tras un tratamiento estadístico riguroso,
-                    hemos consolidado nuestro <strong>Dataset Unificado</strong>, el
-                    cual nos permite transformar esos datos en información útil para
-                    la interpretación, la planificación y la toma de decisiones
-                    estratégicas en el sector energético.
-                </p>
-
-                <a href="https://www.kaggle.com/datasets/alialmulla97/global-oil-and-gas-extraction-tracker"
-                    target="_blank" rel="noopener" class="marco-cta">
-                    <i data-lucide="file-spreadsheet"></i>
-                    Ver dataset unificado
-                </a>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1.25rem;">
+                    <a href="https://drive.google.com/file/d/1Ma47hUR4yZ17Rd1iAh_TERXWnt8ClN4v/view?usp=sharing"
+                        target="_blank" rel="noopener" class="marco-cta">
+                        <i data-lucide="file-spreadsheet"></i>
+                        Dataset Unificado
+                    </a>
+                    <a href="https://www.kaggle.com/datasets/alialmulla97/global-oil-and-gas-extraction-tracker"
+                        target="_blank" rel="noopener" class="marco-cta">
+                        <i data-lucide="database"></i>
+                        Dataset Kaggle
+                    </a>
+                </div>
             </article>
         </div>
     </section>
@@ -353,7 +324,7 @@
                 <h2 class="section-title">Mapa Web</h2>
                 <p class="section-subtitle">
                     Visualización espacial interactiva de los yacimientos a nivel global,
-                    generada en QGIS y optimizada con técnicas de agrupamiento.
+                    generada en QGIS y optimizada con técnicas de agrupamiento:
                 </p>
             </div>
 
@@ -410,23 +381,18 @@
                 <article class="card concept-card-ext">
                     <div class="card-icon"><i data-lucide="globe"></i></div>
                     <h3>Población</h3>
-                    <p>Conjunto total de <strong>yacimientos</strong> de petróleo y gas
-                        registrados a nivel mundial en el Global Oil and Gas Extraction
-                        Tracker.</p>
-
+                    <p>Todos los yacimientos de petróleo y gas registrados a nivel mundial en el Global Oil and Gas Extraction Tracker.</p>
 
                     <div class="simbolico-block">
                         <span class="simbolico-label">Simbólico</span>
-                        <code>U = {x | x ∈ yacimientos GOGET}<br>N = total de yacimientos</code>
+                        <code>U = {x / x ∈ yacimientos GOGET}<br>X = Mundial<br>N = Infinito</code>
                     </div>
                 </article>
 
                 <article class="card concept-card-ext">
                     <div class="card-icon"><i data-lucide="user"></i></div>
                     <h3>Individuo</h3>
-                    <p>Cada yacimiento registrado (pozo, campo, terminal o complejo) que
-                        forma parte de la población analizada.</p>
-
+                    <p>Cada uno de los yacimientos de petróleo y gas.</p>
 
                     <div class="simbolico-block">
                         <span class="simbolico-label">Simbólico</span>
@@ -437,15 +403,11 @@
                 <article class="card concept-card-ext">
                     <div class="card-icon"><i data-lucide="flask-conical"></i></div>
                     <h3>Muestra</h3>
-                    <p>Subconjunto validado obtenido tras limpiar los registros incompletos,
-                        descartando aquellos con datos faltantes en campos clave como latitud
-                        y longitud.</p>
-
-
+                    <p>Los datos disponibles provienen de una muestra que corresponde a un conjunto de yacimientos de petróleo y gas registrados a nivel mundial, teniendo un total de 8334 yacimientos.</p>
 
                     <div class="simbolico-block">
                         <span class="simbolico-label">Simbólico</span>
-                        <code>M ⊂ U<br>n = tamaño de muestra</code>
+                        <code>M = Yacimientos registrados<br>n = 49212</code>
                     </div>
                 </article>
 
@@ -2165,27 +2127,19 @@
                     <ul class="footer-team">
                         <li>
                             <i data-lucide="user"></i>
-                            <div class="team-member-info">
-                                <span class="team-name">Ronny Taipe</span>
-                            </div>
+                            <a href="https://drive.google.com/file/d/1GQbzJ_OHaSSnAqaHXqADe78OG19XYYxA/view?usp=sharing" target="_blank" rel="noopener" class="team-name" style="color: rgba(255,255,255,0.85); text-decoration: none; transition: color 0.3s;">Ronny Taipe</a>
                         </li>
                         <li>
                             <i data-lucide="user"></i>
-                            <div class="team-member-info">
-                                <span class="team-name">Jordy Madroñero</span>
-                            </div>
+                            <a href="https://drive.google.com/file/d/1brwiqwl7cvcRoHhBaeY7LFy-w2YuisjV/view?usp=sharing" target="_blank" rel="noopener" class="team-name" style="color: rgba(255,255,255,0.85); text-decoration: none; transition: color 0.3s;">Jordy Madroñero</a>
                         </li>
                         <li>
                             <i data-lucide="user"></i>
-                            <div class="team-member-info">
-                                <span class="team-name">Estalin Echeverria</span>
-                            </div>
+                            <a href="https://drive.google.com/file/d/1H_qzow1kSJvkOUtWkBbyhQgrvF9YqLXO/view?usp=sharing" target="_blank" rel="noopener" class="team-name" style="color: rgba(255,255,255,0.85); text-decoration: none; transition: color 0.3s;">Estalin Echeverria</a>
                         </li>
                         <li>
                             <i data-lucide="user"></i>
-                            <div class="team-member-info">
-                                <span class="team-name">Jordan Ramirez</span>
-                            </div>
+                            <a href="https://drive.google.com/file/d/1Rt4ZyKgOyqrTMxmLAllw3mmxTop0buJh/view?usp=sharing" target="_blank" rel="noopener" class="team-name" style="color: rgba(255,255,255,0.85); text-decoration: none; transition: color 0.3s;">Jordan Ramirez</a>
                         </li>
                     </ul>
                 </div>

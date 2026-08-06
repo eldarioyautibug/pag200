@@ -1486,6 +1486,10 @@ button {
     font-size: 0.95rem;
 }
 
+.footer-team a.team-name:hover {
+    color: var(--color-gold);
+}
+
 .footer-bottom {
     padding-top: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
