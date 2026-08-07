@@ -417,7 +417,7 @@
                 <h3 class="table-title">
                     <i data-lucide="table-2"></i>
                     Tabla de variables del dataset
-                    <span class="table-count">36 variables</span>
+                    <span class="table-count">21 variables</span>
                 </h3>
 
                 <div class="table-scroll table-scroll-y">
@@ -425,7 +425,8 @@
                         <thead>
                             <tr>
                                 <th>Nombre original</th>
-                                <th>Variable (Código)</th>
+                                <th>Nombre corto</th>
+                                <th>Nombre en R</th>
                                 <th>Descripción</th>
                                 <th>Tipo</th>
                                 <th>Subtipo</th>
@@ -433,423 +434,326 @@
                                 <th>Rango</th>
                                 <th>Instrumento</th>
                                 <th>Unidad</th>
-                                <th>Escala de medición</th>
+                                <th>Escala</th>
+                                <th>Var. Estadística</th>
+                                <th>Justificación</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>Unit ID</td>
-                                <td>id_unidad</td>
-                                <td>Código alfanumérico que distingue cada activo en el repositorio global de
-                                    hidrocarburos.</td>
+                                <td>ID_Yacimiento</td>
+                                <td>id_yacimiento</td>
+                                <td>Código identificador único asignado a cada yacimiento de petróleo o gas dentro de la base de datos GOGET.</td>
                                 <td><span class="badge cualitativa">Cualitativa</span></td>
                                 <td>Nominal</td>
-                                <td><code>D={x | x ∈ Σ*}</code></td>
-                                <td><code>R ⊂ D</code></td>
-                                <td>Sistema de gestión de datos</td>
-                                <td>Ninguna</td>
+                                <td><code>D={x/x es un código alfanumérico único ˆ x ∈ GOGET}</code></td>
+                                <td><code>R=D</code></td>
+                                <td>Registro administrativo</td>
+                                <td>—</td>
                                 <td>Nominal</td>
+                                <td><span class="badge cualitativa">False</span></td>
+                                <td>Únicamente permite identificar cada yacimiento de forma individual, no aporta información estadística por sí sola.</td>
                             </tr>
                             <tr>
                                 <td>Unit Name</td>
-                                <td>nombre_unidad</td>
-                                <td>Designación comercial del yacimiento o instalación extractiva.</td>
+                                <td>Nombre_Yacimiento</td>
+                                <td>nombre_yacimiento</td>
+                                <td>Nombre oficial con el que se registra el yacimiento, pozo, campo, bloque o complejo.</td>
                                 <td><span class="badge cualitativa">Cualitativa</span></td>
                                 <td>Nominal</td>
-                                <td><code>D={x | x ∈ Σ*}</code></td>
-                                <td><code>R ⊂ D</code></td>
-                                <td>Documentación del proyecto</td>
-                                <td>Ninguna</td>
+                                <td><code>D={x/x ∈ Nombre de yacimiento}</code></td>
+                                <td><code>R={x/x ∈ Hoja de datos[Unit Name]}</code></td>
+                                <td>Registro administrativo</td>
+                                <td>—</td>
                                 <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Unit name local script</td>
-                                <td>nombre_local</td>
-                                <td>Escritura en idioma nativo del país productor de hidrocarburos.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td><code>D={x | x ∈ Σ*}</code></td>
-                                <td><code>R ⊂ D</code></td>
-                                <td>Documentación del proyecto</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Unit name2</td>
-                                <td>nombre_unidad_2</td>
-                                <td>Alias o título previo del yacimiento o instalación extractiva.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td><code>D={x | x ∈ Σ*}</code></td>
-                                <td><code>R ⊂ D</code></td>
-                                <td>Documentación del proyecto</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>ID</td>
-                                <td>id</td>
-                                <td>Código de enlace con repositorios internacionales de energía.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td><code>D={x | x ∈ Σ*}</code></td>
-                                <td><code>R ⊂ D</code></td>
-                                <td>Sistema de gestión de datos</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Country</td>
-                                <td>pais</td>
-                                <td>Territorio soberano donde opera el activo de extracción de hidrocarburos.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td><code>D={x | x ∈ Países reconocidos internacionalmente}</code></td>
-                                <td><code>R ⊂ D</code></td>
-                                <td>Registro oficial / SIG</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-
-                            <tr>
-                                <td>Latitude</td>
-                                <td>latitud</td>
-                                <td>Coordenada norte-sur del activo en el sistema geodésico global.</td>
-                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
-                                <td>Continua</td>
-                                <td><code>D={x | x ∈ ℝ ∧ -90 ≤ x ≤ 90}</code></td>
-                                <td><code>[-90, 90]</code></td>
-                                <td>GPS / SIG</td>
-                                <td>Grados decimales</td>
-                                <td>Intervalo</td>
-                            </tr>
-                            <tr>
-                                <td>Longitude</td>
-                                <td>longitud</td>
-                                <td>Coordenada este-oeste del yacimiento en el sistema geodésico global.</td>
-                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
-                                <td>Continua</td>
-                                <td><code>D={x | x ∈ ℝ ∧ -180 ≤ x ≤ 180}</code></td>
-                                <td><code>[-180, 180]</code></td>
-                                <td>GPS / SIG</td>
-                                <td>Grados decimales</td>
-                                <td>Intervalo</td>
-                            </tr>
-                            <tr>
-                                <td>Location accuracy</td>
-                                <td>precision_ubi</td>
-                                <td>Grado de exactitud geoespacial de las coordenadas del activo.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Ordinal</td>
-                                <td><code>D={'Exact', 'Approximate', 'Country-level', 'Unknown'}</code></td>
-                                <td><code>R ⊂ D</code></td>
-                                <td>Evaluación técnica geoespacial</td>
-                                <td>Ninguna</td>
-                                <td>Ordinal</td>
-                            </tr>
-                            <tr>
-                                <td>Year</td>
-                                <td>anio</td>
-                                <td>Ejercicio anual al que pertenece el dato de extracción o reservas.</td>
-                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
-                                <td>Discreta</td>
-                                <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
-                                <td><code>[1, 2024]</code></td>
-                                <td>Registro temporal de la base de datos</td>
-                                <td>Año (AAAA)</td>
-                                <td>Intervalo</td>
-                            </tr>
-                            <tr>
-                                <td>Discovery year</td>
-                                <td>anio_descubrimiento</td>
-                                <td>Ejercicio en que se certificó el hallazgo comercial del yacimiento.</td>
-                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
-                                <td>Discreta</td>
-                                <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
-                                <td><code>[1, 2024]</code></td>
-                                <td>Registro histórico / exploración geológica</td>
-                                <td>Año (AAAA)</td>
-                                <td>Intervalo</td>
-                            </tr>
-                            <tr>
-                                <td>FID</td>
-                                <td>fid</td>
-                                <td>Ejercicio en que se aprobó el desembolso definitivo del proyecto extractivo.</td>
-                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
-                                <td>Discreta</td>
-                                <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
-                                <td><code>[1, 2024]</code></td>
-                                <td>Registro financiero del proyecto</td>
-                                <td>Año (AAAA)</td>
-                                <td>Intervalo</td>
-                            </tr>
-                            <tr>
-                                <td>Production start year</td>
-                                <td>anio_inicio_prod</td>
-                                <td>Ejercicio en que el activo comenzó a extraer hidrocarburos comercialmente.</td>
-                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
-                                <td>Discreta</td>
-                                <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
-                                <td><code>[1, 2024]</code></td>
-                                <td>Registro operacional del proyecto</td>
-                                <td>Año (AAAA)</td>
-                                <td>Intervalo</td>
-                            </tr>
-                            <tr>
-                                <td>Status year</td>
-                                <td>anio_estado</td>
-                                <td>Ejercicio de la última revisión del ciclo de vida del activo.</td>
-                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
-                                <td>Discreta</td>
-                                <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
-                                <td><code>[1, 2024]</code></td>
-                                <td>Registro histórico / base de datos del operador</td>
-                                <td>Año (AAAA)</td>
-                                <td>Intervalo</td>
-                            </tr>
-                            <tr>
-                                <td>Data year</td>
-                                <td>anio_datos</td>
-                                <td>Ejercicio de referencia del volumen de extracción o reservas consignado.</td>
-                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
-                                <td>Discreta</td>
-                                <td><code>D={x | x ∈ ℤ ∧ x &gt; 0}</code></td>
-                                <td><code>[1, 2024]</code></td>
-                                <td>Registro temporal del informe</td>
-                                <td>Año (AAAA)</td>
-                                <td>Intervalo</td>
+                                <td><span class="badge cualitativa">False</span></td>
+                                <td>Únicamente identifica el yacimiento, no se utiliza directamente en el análisis estadístico.</td>
                             </tr>
                             <tr>
                                 <td>Fuel type</td>
+                                <td>Tipo_Combustible</td>
                                 <td>tipo_combustible</td>
-                                <td>Energético primario explotado: petróleo, gas, carbón u otro hidrocarburo.</td>
+                                <td>Tipo de hidrocarburo principal que se extrae en el yacimiento.</td>
                                 <td><span class="badge cualitativa">Cualitativa</span></td>
                                 <td>Nominal</td>
-                                <td><code>D={'Oil', 'Gas', 'Coal', 'Nuclear', 'Biofuel', 'Other'}</code></td>
-                                <td><code>R ⊂ D</code></td>
-                                <td>Clasificación técnica del proyecto</td>
-                                <td>Ninguna</td>
+                                <td><code>D={oil, gas, oil and gas, gas and condensate}</code></td>
+                                <td><code>R=D</code></td>
+                                <td>Registro técnico del operador (GOGET)</td>
+                                <td>—</td>
                                 <td>Nominal</td>
+                                <td><span class="badge cuantitativa">True</span></td>
+                                <td>Permite identificar y comparar la distribución de los yacimientos según el tipo de combustible extraído, clave para los objetivos del estudio.</td>
                             </tr>
                             <tr>
                                 <td>Unit type</td>
+                                <td>Tipo_Unidad</td>
                                 <td>tipo_unidad</td>
-                                <td>Categoría del activo según su función en la cadena extractiva.</td>
+                                <td>Clasificación estructural del registro dentro de la industria (pozo, campo, bloque, complejo, etc.).</td>
                                 <td><span class="badge cualitativa">Cualitativa</span></td>
                                 <td>Nominal</td>
-                                <td><code>D={'Well', 'Mine', 'Field', 'Plant', 'Pipeline', 'Terminal', ...}</code></td>
-                                <td><code>R ⊂ D</code></td>
-                                <td>Clasificación técnica del proyecto</td>
-                                <td>Ninguna</td>
+                                <td><code>D={field, block, project, complex, concession, basin, sub-basin, area, pool, phase, asset}</code></td>
+                                <td><code>R=D</code></td>
+                                <td>Registro técnico del operador (GOGET)</td>
+                                <td>—</td>
                                 <td>Nominal</td>
+                                <td><span class="badge cuantitativa">True</span></td>
+                                <td>Permite conocer la composición de la base de datos según el nivel de agregación de cada unidad registrada.</td>
+                            </tr>
+                            <tr>
+                                <td>Country</td>
+                                <td>País</td>
+                                <td>pais</td>
+                                <td>País donde se localiza geográficamente el yacimiento de petróleo o gas.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x/x ∈ Países del mundo}</code></td>
+                                <td><code>R={x/x ∈ Hoja de datos[Country]} (104 países)</code></td>
+                                <td>Registro geográfico administrativo (GOGET)</td>
+                                <td>—</td>
+                                <td>Nominal</td>
+                                <td><span class="badge cuantitativa">True</span></td>
+                                <td>Permite identificar la distribución geográfica de los yacimientos a nivel mundial.</td>
+                            </tr>
+                            <tr>
+                                <td>Subnational unit (province, state)</td>
+                                <td>Región_Subnacional</td>
+                                <td>region_subnacional</td>
+                                <td>Provincia, estado o división administrativa dentro del país donde se ubica el yacimiento.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={x/x ∈ Divisiones administrativas ˆ País(x)=Country(x)}</code></td>
+                                <td><code>R={x/x ∈ Hoja de datos[Subnational unit]} (103 divisiones)</code></td>
+                                <td>Registro geográfico administrativo (GOGET)</td>
+                                <td>—</td>
+                                <td>Nominal</td>
+                                <td><span class="badge cuantitativa">True</span></td>
+                                <td>Permite un análisis geográfico más detallado dentro de cada país.</td>
+                            </tr>
+                            <tr>
+                                <td>Latitude</td>
+                                <td>Latitud</td>
+                                <td>latitud</td>
+                                <td>Coordenada geográfica Norte-Sur del yacimiento (asociada con los paralelos).</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Continua</td>
+                                <td><code>D={x/x ∈ ℝ ˆ -90 ≤ x ≤ 90}</code></td>
+                                <td><code>R={x/x ∈ D ˆ -53.97 ≤ x ≤ 73.43}</code></td>
+                                <td>Sistema de posicionamiento geográfico (GOGET)</td>
+                                <td>Grados decimales</td>
+                                <td>Intervalo</td>
+                                <td><span class="badge cuantitativa">True</span></td>
+                                <td>Permite identificar patrones espaciales en la distribución mundial de los yacimientos.</td>
+                            </tr>
+                            <tr>
+                                <td>Longitude</td>
+                                <td>Longitud</td>
+                                <td>longitud</td>
+                                <td>Coordenada geográfica Este-Oeste del yacimiento (asociada con los meridianos).</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Continua</td>
+                                <td><code>D={x/x ∈ ℝ ˆ -180 ≤ x ≤ 180}</code></td>
+                                <td><code>R={x/x ∈ D ˆ -152.13 ≤ x ≤ 174.36}</code></td>
+                                <td>Sistema de posicionamiento geográfico (GOGET)</td>
+                                <td>Grados decimales</td>
+                                <td>Intervalo</td>
+                                <td><span class="badge cuantitativa">True</span></td>
+                                <td>Permite identificar patrones espaciales en la distribución mundial de los yacimientos.</td>
+                            </tr>
+                            <tr>
+                                <td>Location accuracy</td>
+                                <td>Precisión_Ubicación</td>
+                                <td>precision_ubicacion</td>
+                                <td>Indica si las coordenadas geográficas registradas son exactas o aproximadas.</td>
+                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Nominal</td>
+                                <td><code>D={approximate, exact}</code></td>
+                                <td><code>R=D</code></td>
+                                <td>Registro técnico del operador (GOGET)</td>
+                                <td>—</td>
+                                <td>Nominal</td>
+                                <td><span class="badge cuantitativa">True</span></td>
+                                <td>Permite evaluar la calidad y confiabilidad de la información geográfica antes de un análisis espacial.</td>
                             </tr>
                             <tr>
                                 <td>Status</td>
-                                <td>estado</td>
-                                <td>Fase operativa del activo: en producción, construcción, retirado, etc.</td>
+                                <td>Estado_Yacimiento</td>
+                                <td>estado_yacimiento</td>
+                                <td>Etapa del ciclo de vida en la que se encuentra el yacimiento.</td>
                                 <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Ordinal</td>
-                                <td><code>D={'Operating', 'Under Construction', 'Proposed', 'Retired', 'Cancelled', 'Shelved'}</code>
-                                </td>
-                                <td><code>R ⊂ D</code></td>
-                                <td>Informe del operador / registro regulatorio</td>
-                                <td>Ninguno</td>
-                                <td>Ordinal</td>
+                                <td>Nominal</td>
+                                <td><code>D={operating, discovered, in development, decommissioned, UGS, abandoned, shut in, cancelled, exploration}</code></td>
+                                <td><code>R=D</code></td>
+                                <td>Registro técnico del operador (GOGET)</td>
+                                <td>—</td>
+                                <td>Nominal</td>
+                                <td><span class="badge cuantitativa">True</span></td>
+                                <td>Permite conocer en qué fase productiva se encuentra cada yacimiento a nivel mundial.</td>
                             </tr>
                             <tr>
-                                <td>Operator</td>
-                                <td>operador</td>
-                                <td>Compañía a cargo de la gestión diaria del activo extractivo.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td><code>D={x | x ∈ Nombres de empresas operadoras}</code></td>
-                                <td><code>R ⊂ D</code></td>
-                                <td>Documentación corporativa / registro regulatorio</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
+                                <td>Status year</td>
+                                <td>Año_Estado</td>
+                                <td>anio_estado</td>
+                                <td>Año en que se registró por última vez el estado actual del yacimiento.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Discreta</td>
+                                <td><code>D={x/x ∈ N ˆ 1900 ≤ x ≤ 2024}</code></td>
+                                <td><code>R={x/x ∈ D ˆ 1989 ≤ x ≤ 2024}</code></td>
+                                <td>Registro cronológico (GOGET)</td>
+                                <td>Año</td>
+                                <td>Intervalo</td>
+                                <td><span class="badge cuantitativa">True</span></td>
+                                <td>Permite conocer qué tan actualizada está la información del estado de cada yacimiento.</td>
                             </tr>
                             <tr>
-                                <td>Owner</td>
-                                <td>propietario</td>
-                                <td>Entidad con derechos legales sobre el yacimiento o instalación.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td><code>D={x | x ∈ Nombres de propietarios o accionistas}</code></td>
-                                <td><code>R ⊂ D</code></td>
-                                <td>Documentación legal / corporativa</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
+                                <td>Discovery year</td>
+                                <td>Año_Descubrimiento</td>
+                                <td>anio_descubrimiento</td>
+                                <td>Año en el que fue descubierto el yacimiento de petróleo o gas.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Discreta</td>
+                                <td><code>D={x/x ∈ N ˆ 1800 ≤ x ≤ 2024}</code></td>
+                                <td><code>R={x/x ∈ D ˆ 1869 ≤ x ≤ 2023}</code></td>
+                                <td>Registro cronológico (GOGET)</td>
+                                <td>Año</td>
+                                <td>Intervalo</td>
+                                <td><span class="badge cuantitativa">True</span></td>
+                                <td>Permite conocer la evolución temporal del descubrimiento de yacimientos a nivel mundial, clave para el análisis histórico.</td>
                             </tr>
                             <tr>
-                                <td>Parent</td>
-                                <td>matriz</td>
-                                <td>Corporación de mayor jerarquía que controla al operador del activo.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td><code>D={x | x ∈ Nombres de empresas matrices}</code></td>
-                                <td><code>R ⊂ D</code></td>
-                                <td>Documentación corporativa</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
+                                <td>FID Year</td>
+                                <td>Año_Decisión_Inversión</td>
+                                <td>anio_fid</td>
+                                <td>Año en que se tomó la decisión final de inversión (Final Investment Decision) para desarrollar el yacimiento.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Discreta</td>
+                                <td><code>D={x/x ∈ N ˆ 1900 ≤ x ≤ 2024}</code></td>
+                                <td><code>R={x/x ∈ D ˆ 1975 ≤ x ≤ 2024}</code></td>
+                                <td>Registro cronológico (GOGET)</td>
+                                <td>Año</td>
+                                <td>Intervalo</td>
+                                <td><span class="badge cuantitativa">True</span></td>
+                                <td>Permite analizar el tiempo transcurrido entre el descubrimiento y la decisión de inversión en cada yacimiento.</td>
                             </tr>
                             <tr>
-                                <td>Government unit</td>
-                                <td>unidad_gub</td>
-                                <td>Ente público con atribuciones sobre la concesión o regulación del activo extractivo.
-                                </td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td><code>D={x | x ∈ Nombres de entidades públicas}</code></td>
-                                <td><code>R ⊂ D</code></td>
-                                <td>Registro oficial del Estado</td>
-                                <td>Ninguno</td>
-                                <td>Nominal</td>
+                                <td>Production start year</td>
+                                <td>Año_Inicio_Producción</td>
+                                <td>anio_inicio_produccion</td>
+                                <td>Año en que el yacimiento inició su etapa de producción.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Discreta</td>
+                                <td><code>D={x/x ∈ N ˆ 1800 ≤ x ≤ 2030}</code></td>
+                                <td><code>R={x/x ∈ D ˆ 1896 ≤ x ≤ 2027}</code></td>
+                                <td>Registro cronológico (GOGET)</td>
+                                <td>Año</td>
+                                <td>Intervalo</td>
+                                <td><span class="badge cuantitativa">True</span></td>
+                                <td>Permite estimar el tiempo de maduración de los yacimientos y comparar su evolución productiva en el tiempo.</td>
                             </tr>
                             <tr>
                                 <td>Basin</td>
+                                <td>Cuenca</td>
                                 <td>cuenca</td>
-                                <td>Formación geológica sedimentaria donde se concentran los hidrocarburos.</td>
+                                <td>Cuenca sedimentaria geológica en la que se encuentra ubicado el yacimiento.</td>
                                 <td><span class="badge cualitativa">Cualitativa</span></td>
                                 <td>Nominal</td>
-                                <td><code>D={x | x ∈ Nombres de cuencas geológicas}</code></td>
-                                <td><code>R ⊂ D</code></td>
-                                <td>Cartografía geológica / SIG</td>
-                                <td>Ninguno</td>
+                                <td><code>D={x/x ∈ Cuencas sedimentarias}</code></td>
+                                <td><code>R={x/x ∈ Hoja de datos[Basin]} (174 cuencas)</code></td>
+                                <td>Registro geológico (GOGET)</td>
+                                <td>—</td>
                                 <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Concession / block</td>
-                                <td>bloque_concesion</td>
-                                <td>Sector otorgado por el Estado para explorar o producir hidrocarburos.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td><code>D={x | x ∈ Códigos o nombres de bloques concesionados}</code></td>
-                                <td><code>R ⊂ D</code></td>
-                                <td>Registro gubernamental / ente regulador</td>
-                                <td>Ninguno</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Project or complex</td>
-                                <td>proyecto_complejo</td>
-                                <td>Conjunto de activos vinculados bajo una misma iniciativa extractiva.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td><code>D={x | x ∈ Nombres de proyectos o complejos energéticos}</code></td>
-                                <td><code>R ⊂ D</code></td>
-                                <td>Documentación del proyecto</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>Wiki</td>
-                                <td>wiki</td>
-                                <td>URL enciclopédica de referencia abierta sobre el activo o yacimiento.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td><code>D={x | x ∈ URLs válidas de Wikipedia}</code></td>
-                                <td><code>R ⊂ D</code></td>
-                                <td>Fuente web externa (Wikipedia)</td>
-                                <td>Ninguno</td>
-                                <td>Nominal</td>
-                            </tr>
-                            <tr>
-                                <td>URL</td>
-                                <td>url</td>
-                                <td>Dirección web de la fuente primaria o secundaria del dato consignado.</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
-                                <td>Nominal</td>
-                                <td><code>D={x | x ∈ URLs válidas}</code></td>
-                                <td><code>R ⊂ D</code></td>
-                                <td>Fuente web externa</td>
-                                <td>Ninguno</td>
-                                <td>Nominal</td>
+                                <td><span class="badge cuantitativa">True</span></td>
+                                <td>Permite agrupar los yacimientos según su formación geológica común y analizar su distribución territorial.</td>
                             </tr>
                             <tr>
                                 <td>Production/reserves</td>
-                                <td>reservas_prod</td>
-                                <td>Clasificación que diferencia extracción efectiva de volúmenes estimados en el
-                                    subsuelo.</td>
+                                <td>Tipo_Registro</td>
+                                <td>tipo_registro</td>
+                                <td>Indica si el valor reportado corresponde a producción, reservas, producción acumulada o capacidad de diseño.</td>
                                 <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td>Ordinal</td>
+                                <td><code>D={cumulative production, reserves, production, production design capacity}</code></td>
+                                <td><code>R=D</code></td>
+                                <td>Registro técnico del operador (GOGET)</td>
+                                <td>—</td>
                                 <td>Nominal</td>
-                                <td><code>D={'Production', 'Reserves'}</code></td>
-                                <td><code>R ⊂ D</code></td>
-                                <td>Clasificación técnica del dato</td>
-                                <td>Ninguno</td>
-                                <td>Nominal</td>
+                                <td><span class="badge cuantitativa">True</span></td>
+                                <td>Permite diferenciar el tipo de magnitud reportada para cada yacimiento antes de analizarla estadísticamente.</td>
                             </tr>
                             <tr>
                                 <td>Fuel description</td>
-                                <td>desc_combustible</td>
-                                <td>Subtipo o grado del hidrocarburo explotado (crudo liviano, GNL, etc.).</td>
+                                <td>Descripción_Combustible</td>
+                                <td>descripcion_combustible</td>
+                                <td>Detalle específico del hidrocarburo asociado al valor de producción o reserva reportado.</td>
                                 <td><span class="badge cualitativa">Cualitativa</span></td>
                                 <td>Nominal</td>
-                                <td><code>D={x | x ∈ Descripciones textuales de combustibles}</code></td>
-                                <td><code>R ⊂ D</code></td>
-                                <td>Clasificación técnica del proyecto</td>
-                                <td>Ninguno</td>
+                                <td><code>D={x/x ∈ Tipos de hidrocarburo}</code></td>
+                                <td><code>R={x/x ∈ Hoja de datos[Fuel description]} (39 categorías)</code></td>
+                                <td>Registro técnico del operador (GOGET)</td>
+                                <td>—</td>
                                 <td>Nominal</td>
+                                <td><span class="badge cuantitativa">True</span></td>
+                                <td>Detalla con mayor especificidad el tipo de hidrocarburo reportado en cada registro de producción o reservas.</td>
                             </tr>
                             <tr>
                                 <td>Reserves classification (original)</td>
-                                <td>origen_clasif_res</td>
-                                <td>Categoría de certidumbre del volumen según la norma SPE-PRMS.</td>
+                                <td>Clasificación_Reservas</td>
+                                <td>clasificacion_reservas</td>
+                                <td>Metodología o categoría bajo la cual fue estimada la reserva o recurso del yacimiento.</td>
                                 <td><span class="badge cualitativa">Cualitativa</span></td>
                                 <td>Ordinal</td>
-                                <td><code>D={'Proved', 'Probable', 'Possible', 'Contingent', 'Prospective', ...}</code>
-                                </td>
-                                <td><code>R ⊂ D</code></td>
-                                <td>Informe técnico / normativa SPE-PRMS</td>
-                                <td>Ninguna</td>
-                                <td>Ordinal</td>
-                            </tr>
-                            <tr>
-                                <td>Quantity (original)</td>
-                                <td>cant_original</td>
-                                <td>Volumen de hidrocarburos tal como figura en la fuente primaria.</td>
-                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
-                                <td>Continua</td>
-                                <td><code>D={x | x ∈ ℝ ∧ x ≥ 0}</code></td>
-                                <td><code>[0, ∞)</code></td>
-                                <td>Medición técnica / informe de reservas</td>
-                                <td>Ver 'Units (original)'</td>
-                                <td>Razón</td>
-                            </tr>
-                            <tr>
-                                <td>Units (original)</td>
-                                <td>unid_originales</td>
-                                <td>Unidad de medida empleada en la fuente de origen (Bcf, MMbbl, Mt, etc.).</td>
-                                <td><span class="badge cualitativa">Cualitativa</span></td>
+                                <td><code>D={x/x ∈ Clasificaciones de reservas}</code></td>
+                                <td><code>R={x/x ∈ Hoja de datos[Reserves classification]} (243 categorías)</code></td>
+                                <td>Registro técnico del operador (GOGET)</td>
+                                <td>—</td>
                                 <td>Nominal</td>
-                                <td><code>D={'Bcf', 'MMbbl', 'Mt', 'Tcf', 'PJ', ...}</code></td>
-                                <td><code>R ⊂ D</code></td>
-                                <td>Clasificación metrológica técnica</td>
-                                <td>Ninguna</td>
-                                <td>Nominal</td>
+                                <td><span class="badge cuantitativa">True</span></td>
+                                <td>Permite conocer el nivel de certeza y la metodología con la que se estimaron las reservas de cada yacimiento.</td>
                             </tr>
                             <tr>
                                 <td>Quantity (converted)</td>
-                                <td>cant_convertida</td>
-                                <td>Volumen de extracción o reservas normalizado a la unidad estándar del análisis.</td>
+                                <td>Cantidad_Convertida</td>
+                                <td>cantidad_convertida</td>
+                                <td>Valor numérico de producción o reservas del yacimiento, estandarizado a una unidad de medida común.</td>
                                 <td><span class="badge cuantitativa">Cuantitativa</span></td>
                                 <td>Continua</td>
-                                <td><code>D={x | x ∈ ℝ ∧ x ≥ 0}</code></td>
-                                <td><code>[0, ∞)</code></td>
-                                <td>Conversión técnica estandarizada</td>
-                                <td>Ver 'Units (converted)'</td>
+                                <td><code>D={x/x ∈ ℝ}</code></td>
+                                <td><code>R={x/x ∈ D ˆ -0.02 ≤ x ≤ 49 837 179.67}</code></td>
+                                <td>Reportes técnicos de producción y reservas (GOGET)</td>
+                                <td>Millones de barriles, m³ o boe (según categoría)</td>
                                 <td>Razón</td>
+                                <td><span class="badge cuantitativa">True</span></td>
+                                <td>Permite cuantificar la producción o reservas de cada yacimiento; su magnitud depende de la unidad asociada, por lo que se analiza junto con 'Units (converted)'. Los pocos valores negativos corresponden a correcciones o ajustes reportados en la fuente original.</td>
                             </tr>
                             <tr>
                                 <td>Units (converted)</td>
-                                <td>unid_convertidas</td>
-                                <td>Unidad estandarizada a la que se transformaron todos los volúmenes del estudio.</td>
+                                <td>Unidad_Medida</td>
+                                <td>unidad_medida</td>
+                                <td>Unidad estandarizada en la que se expresa la cantidad convertida de producción o reservas.</td>
                                 <td><span class="badge cualitativa">Cualitativa</span></td>
                                 <td>Nominal</td>
-                                <td><code>D={'EJ', 'Mtoe', 'PJ', 'Bcf eq.', ...}</code></td>
-                                <td><code>R ⊂ D</code></td>
-                                <td>Clasificación metrológica estándar</td>
-                                <td>Ninguna</td>
+                                <td><code>D={million bbl, million m³, million bbl/y, million m³/y, million boe, million boe/y}</code></td>
+                                <td><code>R=D</code></td>
+                                <td>Registro técnico del operador (GOGET)</td>
+                                <td>—</td>
                                 <td>Nominal</td>
+                                <td><span class="badge cuantitativa">True</span></td>
+                                <td>Es necesaria para interpretar correctamente los valores numéricos de la variable Cantidad_Convertida.</td>
+                            </tr>
+                            <tr>
+                                <td>Data year</td>
+                                <td>Año_Dato</td>
+                                <td>anio_dato</td>
+                                <td>Año al que corresponde el valor reportado de producción o reservas.</td>
+                                <td><span class="badge cuantitativa">Cuantitativa</span></td>
+                                <td>Discreta</td>
+                                <td><code>D={x/x ∈ N ˆ 1900 ≤ x ≤ 2050}</code></td>
+                                <td><code>R={x/x ∈ D ˆ 1938 ≤ x ≤ 2044}</code></td>
+                                <td>Registro cronológico (GOGET)</td>
+                                <td>Año</td>
+                                <td>Intervalo</td>
+                                <td><span class="badge cuantitativa">True</span></td>
+                                <td>Permite ordenar cronológicamente los reportes de producción y reservas, incluyendo proyecciones futuras.</td>
                             </tr>
                         </tbody>
                     </table>
@@ -2009,8 +1913,8 @@
                 <div class="team-grid">
                     <article class="team-card">
                         <div class="team-avatar">RT</div>
-                        <h4><a href="https://drive.google.com/file/d/1GQbzJ_OHaSSnAqaHXqADe78OG19XYYxA/view?usp=sharing" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">Ronny Taipe</a></h4>
-                        <p class="team-role">Integrante</p><a href="https://drive.google.com/file/d/1GQbzJ_OHaSSnAqaHXqADe78OG19XYYxA/view?usp=sharing" target="_blank" rel="noopener"
+                        <h4><a href="https://drive.google.com/file/d/1GQbzJ_OHaSSnAqaHXgADe78OG19XYYxA/view" target="_blank" rel="noopener" style="color: inherit; text-decoration: none;">Ronny Taipe</a></h4>
+                        <p class="team-role">Integrante</p><a href="https://drive.google.com/file/d/1GQbzJ_OHaSSnAqaHXgADe78OG19XYYxA/view" target="_blank" rel="noopener"
                             class="team-link"><i data-lucide="file-text"></i> Ver CV</a>
                     </article>
                     <article class="team-card">

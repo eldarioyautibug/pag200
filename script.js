@@ -181,6 +181,39 @@
             return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
         }
 
+        function highlightTextNodes(node, regex) {
+            Array.from(node.childNodes).forEach((child) => {
+                if (child.nodeType === Node.TEXT_NODE) {
+                    if (!regex.test(child.textContent)) return;
+                    regex.lastIndex = 0;
+                    const frag = document.createDocumentFragment();
+                    let lastIndex = 0;
+                    let match;
+                    while ((match = regex.exec(child.textContent)) !== null) {
+                        if (match.index > lastIndex) {
+                            frag.appendChild(document.createTextNode(
+                                child.textContent.slice(lastIndex, match.index)
+                            ));
+                        }
+                        const mark = document.createElement('span');
+                        mark.className = 'highlight';
+                        mark.textContent = match[0];
+                        frag.appendChild(mark);
+                        lastIndex = match.index + match[0].length;
+                        if (match[0].length === 0) regex.lastIndex++;
+                    }
+                    if (lastIndex < child.textContent.length) {
+                        frag.appendChild(document.createTextNode(
+                            child.textContent.slice(lastIndex)
+                        ));
+                    }
+                    node.replaceChild(frag, child);
+                } else if (child.nodeType === Node.ELEMENT_NODE) {
+                    highlightTextNodes(child, regex);
+                }
+            });
+        }
+
         function filterTable() {
             const query = searchInput.value.trim().toLowerCase();
             let visibleCount = 0;
@@ -200,10 +233,7 @@
                         const regex = new RegExp(`(${escapeRegExp(query)})`, 'gi');
                         row.querySelectorAll('td').forEach((cell) => {
                             if (cell.textContent.toLowerCase().includes(query)) {
-                                cell.innerHTML = cell.innerHTML.replace(
-                                    regex,
-                                    '<span class="highlight">$1</span>'
-                                );
+                                highlightTextNodes(cell, regex);
                             }
                         });
                     }
